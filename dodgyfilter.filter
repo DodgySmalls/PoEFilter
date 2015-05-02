@@ -209,6 +209,11 @@ Show
 Show
     BaseType "Zodiac Leather" "Royal Burgonet"
 
+#For rare wands, ilvl and base is irrelevant
+Show
+    Class "Wands"
+    Rarity Rare
+
 #provisional 2.0.0 Maraketh tags
 Show
     BaseType "Demon Sceptre" "Sai" "Ghost Axe" "Demon Fangs" "Moon Staff" "Sacrament Wand" "Moon Claw" "Matriarchal Bow" "Dragon Mace" 
