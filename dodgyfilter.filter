@@ -197,7 +197,10 @@ Show
 
 #We always want to display jewellery as normal (regardless of rarity), and skill tree jewels
 Show
-    Class Rings Amulets Belts Jewels
+    Class Rings Amulets Belts
+
+Show
+    BaseType Jewels
 
 #Item bases that are BiS or generally good will always be displayed as normal, regardless of zone level
 Show
