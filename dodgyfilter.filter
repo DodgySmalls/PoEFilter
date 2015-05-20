@@ -144,7 +144,7 @@ Show
     BaseType "Quartz Wand" "Two-Handed Sword" "Sledgehammer" "Poleaxe" "Basket Rapier" "Iron Staff" "Recurve Bow" "Cat's Paw" "Stiletto" "Cleaver" "Spiked Club" "Broad Sword" "Quartz Sceptre"
     ItemLevel <= 31
 Show
-    BaseType "Spiraled Wand" "Etched Greatsword" "Spiked Maul" "Double Axe" "Jagged Foil" "Coiled Staff" "Bone Bow" "Blinder" "Boot Knife" "Broad Axe" "Stone Hammer" "War Sword" "Iron Sceptre"
+    BaseType "Spiraled Wand" "Etched Greatsword" "Morning Star" "Double Axe" "Jagged Foil" "Coiled Staff" "Bone Bow" "Blinder" "Boot Knife" "Broad Axe" "Stone Hammer" "War Sword" "Iron Sceptre"
     ItemLevel <= 34
 Show
     BaseType "Sage Wand" "Ornate Sword" "Brass Maul" "Gilded Axe" "Antique Rapier" "Royal Staff" "Royal Bow" "Timeworn Claw" "Copper Kris" "Arming Axe" "War Hammer" "Ancient Sword" "Ochre Sceptre"
@@ -203,8 +203,8 @@ Show
     BaseType Jewels
 
 #Item bases that are BiS or generally good will always be displayed as normal, regardless of zone level
-Show
-    BaseType "Ancient Blade" "Vaal Regalia" "Saintly Chainmail" "Titanium Spirit Shield" "Murder Boots" "Titan Greaves" "Archon Kite Shield" "Elegant Round Shield" "Pinnacle Tower Shield" "Slink Boots" "Slink Gloves" "Titan Gauntlets" "Sorcerer Gloves" "Lion Pelt" "Hubris Circlet" "Eternal Burgonet" "Carnal Armour" "Tornado Wand" "Prophecy Wand" "Imbued Wand" "Infernal Sword" "Void Axe" "Jewelled Foil" "Harpy Rapier" "Judgement Staff" "Void Sceptre" "Midnight Blade" "Eternal Sword" "Harbinger Bow" "Imperial Claw" "Ambusher" "Platinum Kris" "Terror Claw" "Imperial Skean" "Demon Dagger" "Infernal Axe"
+Showe
+    BaseType "Exquisite Blade" "Vaal Regalia" "Saintly Chainmail" "Titanium Spirit Shield" "Murder Boots" "Titan Greaves" "Archon Kite Shield" "Elegant Round Shield" "Pinnacle Tower Shield" "Slink Boots" "Slink Gloves" "Titan Gauntlets" "Sorcerer Gloves" "Lion Pelt" "Hubris Circlet" "Eternal Burgonet" "Carnal Armour" "Tornado Wand" "Prophecy Wand" "Imbued Wand" "Infernal Sword" "Void Axe" "Jewelled Foil" "Harpy Rapier" "Judgement Staff" "Void Sceptre" "Midnight Blade" "Eternal Sword" "Harbinger Bow" "Imperial Claw" "Ambusher" "Platinum Kris" "Terror Claw" "Imperial Skean" "Demon Dagger" "Infernal Axe"
 
 Show
     BaseType "Zodiac Leather" "Royal Burgonet"
@@ -216,7 +216,7 @@ Show
 
 #provisional 2.0.0 Maraketh tags
 Show
-    BaseType "Demon Sceptre" "Sai" "Ghost Axe" "Demon Fangs" "Moon Staff" "Sacrament Wand" "Moon Claw" "Matriarchal Bow" "Dragon Mace" 
+    BaseType "Sambar Sceptre" "Sai" "Runic Hatchet" "Fleshripper" "Eclipse Staff" "Profane Wand" "Gemini Claw" "Steelwood Bow" "Midgard Mace" 
 
 #Fishing rods get quest colour 
 Show
