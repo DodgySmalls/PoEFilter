@@ -1,16 +1,25 @@
 # PoEFilter
-This is intended to be a visually lightweight filter, similar to the core PoE filter.
-The only additional colours that have been added are red, for a few rare purposes, and pink for RBG and 6s items. Beyond that no new colours will be present on the screen, so hopefully we can all stay away from Path of Rainbow Particle Effect Explosion.
+A lightweight filter which remains close to the default filter scheme.
 
-# Functionality
+* Currency
+    * High tier currency is highlighted (#786446)
+    * Mid tier currency untouched
+    * Low tier currency (shards/scrolls) font decreased
+* Gems
+    * Support gems are highlighted
+    * Quality %10+ gems (active/support) are bordered
+* Recipe Highlighting
+    * Quality %10+ flasks are bordered
+    * RBG items are bordered (#FF8C8C)
+    * 6 sock items are bordered (#FF6464)
+    * Chisel recipe is NOT enabled
+* Basetypes
+    * Items with droplevel <= 20 are filtered 8 levels below the zone
+    * Items with droplevel <= 50 are filtered 10 levels below the zone
+    * Items with droplevel >= 50 are filtered 12 levels below the zone
+    * Best in slots are never filtered
+    * Rare caster weapons are never filtered (even low bases)
+    * Rare rings, amulets, and belts are never filtered
+    * Flasks are filtered heavily, and will all be hidden in endgame
 
-Currency:
-	Higher tiered currency is distinct, mid currency is displayed normally, scraps/fragments are smaller
-
-
-# Neglected options
-
-Chisel recipe bases are NOT highlighted
-
-Items are NOT displayed differently proportional to their absolute value (only relative to ilevel)
-
+Filtered items are given smaller font and reduced background opacity, no items are hidden.
