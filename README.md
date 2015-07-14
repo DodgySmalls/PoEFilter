@@ -1,5 +1,6 @@
 # PoEFilter
 A lightweight filter which remains close to the default filter scheme.
+Check out this guide if you'd like to install or learn more about item filters: http://pathofexile.gamepedia.com/Item_filter
 
 * Currency
     * High tier currency is highlighted (#786446)
