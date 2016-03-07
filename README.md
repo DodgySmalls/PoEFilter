@@ -17,10 +17,12 @@ Check out this guide if you'd like to install or learn more about item filters: 
 * Basetypes
     * Items with droplevel <= 20 are filtered 8 levels below the zone
     * Items with droplevel <= 50 are filtered 10 levels below the zone
-    * Items with droplevel >= 50 are filtered 12 levels below the zone
+    * Items with droplevel > 50 are filtered 12 levels below the zone
     * Best in slots are never filtered
     * Rare caster weapons are never filtered (even low bases)
     * Rare rings, amulets, and belts are never filtered
     * Flasks are filtered heavily, and will all be hidden in endgame
 
 Filtered items are given smaller font and reduced background opacity, no items are hidden.
+
+Now supports ascendancy (keys and supplements are highlighted as quest items) and perandus coins.
