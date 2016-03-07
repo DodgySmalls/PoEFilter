@@ -184,7 +184,7 @@ Show
 #Fishing rods get quest colour 
 Show
     Class "Fishing Rods"
-    SetTextColor 74 320 58
+    SetTextColor 74 230 58
 
 #Vaal/Mortal Fragments are changed to red, this is just personal taste
 Show
@@ -200,9 +200,10 @@ Show
 	BaseType "Silver Key" "Golden Key" "Treasure Key"
     SetTextColor 74 230 58  
 
+#Note that the "cube of absorption" has a capital 'o' in 'Of' unlike other items
 Show
-	BaseType "Cube of Absorption" "Bane of the Loyal" "Cogs of Disruptions" "Heart of the Gargoyle" "Orb of Elemental Essence" "Portal Shredder" "Rod of Detonation" "Sand of Eternity"
-	SetTextColor 74 320 58
+	BaseType "Cube Of Absorption" "Bane of the Loyal" "Cogs of Disruption" "Heart of the Gargoyle" "Orb of Elemental Essence" "Portal Shredder" "Rod of Detonation" "Sand of Eternity"
+	SetTextColor 74 230 58
 	
 Show
     Class "Quest Items"
