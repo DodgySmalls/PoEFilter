@@ -7,11 +7,19 @@
 Show
     BaseType "Mirror of Kalandra"
     SetTextColor 0 0 0
+	SetFontSize 42
     SetBorderColor 255 255 255
     SetBackgroundColor 140 140 140
     PlayAlertSound 3
+	
 Show
-    BaseType "Exalted Orb" "Eternal Orb" "Orb of Regret" "Chaos Orb" "Regal Orb" "Orb of Fusing" "Gemcutter's Prism" "Divine Orb" "Orb of Alchemy" "Vaal Orb"
+    BaseType "Exalted Orb" "Eternal Orb" 
+    SetTextColor 220 200 170
+    SetBackgroundColor 120 100 70
+	SetFontSize 42
+	
+Show
+    BaseType "Orb of Regret" "Chaos Orb" "Regal Orb" "Orb of Fusing" "Gemcutter's Prism" "Divine Orb" "Orb of Alchemy" "Vaal Orb"
     SetTextColor 220 200 170
     SetBackgroundColor 120 100 70
 
@@ -20,6 +28,16 @@ Show
     Class "Currency"
     BaseType "Scroll" "Shard" "Fragment"
     SetFontSize 24
+
+#Perandus league and Labyrinth
+Show
+	BaseType "Silver Key" "Golden Key" "Treasure Key"
+    SetTextColor 74 230 58  
+	
+Show
+	BaseType "Perandus Coin"
+	SetTextColor 254 170 0
+	SetFontSize 38
 
 #"Medium" (alterations/chromatics/jewellers) displayed as normal
 Show
