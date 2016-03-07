@@ -7,7 +7,7 @@
 Show
     BaseType "Mirror of Kalandra"
     SetTextColor 0 0 0
-	SetFontSize 42
+	SetFontSize 38
     SetBorderColor 255 255 255
     SetBackgroundColor 140 140 140
     PlayAlertSound 3
@@ -16,7 +16,7 @@ Show
     BaseType "Exalted Orb" "Eternal Orb" 
     SetTextColor 220 200 170
     SetBackgroundColor 120 100 70
-	SetFontSize 42
+	SetFontSize 38
 	
 Show
     BaseType "Orb of Regret" "Chaos Orb" "Regal Orb" "Orb of Fusing" "Gemcutter's Prism" "Divine Orb" "Orb of Alchemy" "Vaal Orb"
@@ -29,14 +29,11 @@ Show
     BaseType "Scroll" "Shard" "Fragment"
     SetFontSize 24
 
-#Perandus league and Labyrinth
-Show
-	BaseType "Silver Key" "Golden Key" "Treasure Key"
-    SetTextColor 74 230 58  
 	
+#Perandus League
 Show
 	BaseType "Perandus Coin"
-	SetTextColor 254 170 0
+	SetTextColor 124 81 50 
 	SetFontSize 38
 
 #"Medium" (alterations/chromatics/jewellers) displayed as normal
@@ -187,7 +184,7 @@ Show
 #Fishing rods get quest colour 
 Show
     Class "Fishing Rods"
-    SetTextColor 40 216 58
+    SetTextColor 74 320 58
 
 #Vaal/Mortal Fragments are changed to red, this is just personal taste
 Show
@@ -196,6 +193,17 @@ Show
     SetBorderColor 255 20 20
     SetBackgroundColor 10 20 20
 
+#----------------------------------------------
+#                    Labyrinth
+#----------------------------------------------
+Show
+	BaseType "Silver Key" "Golden Key" "Treasure Key"
+    SetTextColor 74 230 58  
+
+Show
+	BaseType "Cube of Absorption" "Bane of the Loyal" "Cogs of Disruptions" "Heart of the Gargoyle" "Orb of Elemental Essence" "Portal Shredder" "Rod of Detonation" "Sand of Eternity"
+	SetTextColor 74 320 58
+	
 Show
     Class "Quest Items"
 
