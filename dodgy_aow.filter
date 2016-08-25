@@ -7,38 +7,30 @@
 Show
     BaseType "Mirror of Kalandra"
     SetTextColor 0 0 0
-	SetFontSize 38
+	SetFontSize 64
     SetBorderColor 255 255 255
     SetBackgroundColor 140 140 140
-    PlayAlertSound 3
+    PlayAlertSound 5
 	
 Show
     BaseType "Exalted Orb" "Eternal Orb" 
     SetTextColor 220 200 170
     SetBackgroundColor 120 100 70
-	SetFontSize 38
+	SetFontSize 50
+	PlayAlertSound 4
 	
 Show
     BaseType "Orb of Regret" "Chaos Orb" "Regal Orb" "Orb of Fusing" "Gemcutter's Prism" "Divine Orb" "Orb of Alchemy" "Vaal Orb"
     SetTextColor 220 200 170
     SetBackgroundColor 120 100 70
+	SetFontSize 40
+	PlayAlertSound 1
 
-#"Lesser" (scrolls/fragments/shards) currency is displayed with a smaller font
 Show
     Class "Currency"
-    BaseType "Scroll" "Shard" "Fragment"
-    SetFontSize 24
+    SetFontSize 40
 
 	
-#Perandus League
-Show
-	BaseType "Perandus Coin"
-	SetTextColor 124 81 50 
-	SetFontSize 38
-
-#"Medium" (alterations/chromatics/jewellers) displayed as normal
-Show
-    Class Currency
 
 #----------------------------------------------
 #                          Gems
@@ -72,6 +64,7 @@ Show
 
 Show
     Rarity Unique
+	SetFontSize 40
 
 #----------------------------------------------
 #                          Sockets
@@ -207,6 +200,7 @@ Show
 	
 Show
     Class "Quest Items"
+	SetFontSize 50
 
 #----------------------------------------------
 #                    Droplevel dependent clauses
@@ -437,19 +431,19 @@ Show
 
 Show
     Rarity Rare
-    SetTextColor 229 183 41 255
+    SetTextColor 227 227 106 255
     SetBackgroundColor 0 0 0 0
     SetFontSize 24
 
 Show
     Rarity Magic
-    SetTextColor 20 134 245 255
+    SetTextColor 126 126 216 255
     SetBackgroundColor 0 0 0 0
     SetFontSize 24
 
 Show
     Rarity Normal
-    SetTextColor 190 190 190 255
+    SetTextColor 200 200 200 255
     SetBackgroundColor 0 0 0 0
     SetFontSize 24
 
