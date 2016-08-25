@@ -3,9 +3,9 @@ A lightweight filter which remains close to the default filter scheme.
 Check out this guide if you'd like to install or learn more about item filters: http://pathofexile.gamepedia.com/Item_filter
 
 * Currency
+    * Currency has had font size increased (improved ease of interaction)
     * High tier currency is highlighted (#786446)
-    * Mid tier currency untouched
-    * Low tier currency (shards/scrolls) font decreased
+    * Distinct sounds added for Mirror/High Tier/Mid Tier respectively (improved offscreen information)
 * Gems
     * Support gems are highlighted
     * Quality %10+ gems (active/support) are bordered
@@ -21,6 +21,7 @@ Check out this guide if you'd like to install or learn more about item filters: 
     * Best in slots are never filtered
     * Rare caster weapons are never filtered (even low bases)
     * Rare rings, amulets, and belts are never filtered
+    * Rare jewels are never filtered
     * Flasks are filtered heavily, and will all be hidden in endgame
 
 Filtered items are given smaller font and reduced background opacity, no items are hidden.
