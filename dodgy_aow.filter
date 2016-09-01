@@ -1,28 +1,28 @@
 #----------------------------------------------
-#                          Currency
+#						   Currency
 #----------------------------------------------
 #"Greater" currency is shown with an opaque background, enlarged font, and accompanied by sounds for each tier
 # More average currency is shown at normal size, but the useful stuff is accompanied by a sound
 
 Show
 	BaseType "Mirror of Kalandra"
-    SetTextColor 0 0 0
+	SetTextColor 0 0 0
 	SetFontSize 64
-    SetBorderColor 255 255 255
-    SetBackgroundColor 140 140 140
-    PlayAlertSound 5
+	SetBorderColor 255 255 255
+	SetBackgroundColor 140 140 140
+	PlayAlertSound 5
 	
 Show
-    BaseType "Exalted Orb" "Eternal Orb" "Divine Orb"
-    SetTextColor 220 200 170
-    SetBackgroundColor 120 100 70
+	BaseType "Exalted Orb" "Eternal Orb" "Divine Orb"
+	SetTextColor 220 200 170
+	SetBackgroundColor 120 100 70
 	SetFontSize 50
 	PlayAlertSound 4
 	
 Show
-    BaseType "Orb of Regret" "Chaos Orb" "Regal Orb" 
-    SetTextColor 220 200 170
-    SetBackgroundColor 120 100 70
+	BaseType "Orb of Regret" "Chaos Orb" "Regal Orb" 
+	SetTextColor 220 200 170
+	SetBackgroundColor 120 100 70
 	SetFontSize 40
 	PlayAlertSound 1
 
@@ -30,11 +30,11 @@ Show
 Show
 	BaseType "Orb of Fusing" "Gemcutter's Prism" "Orb of Alchemy" "Vaal Orb" "Cartographer's Chisel"
 	SetTextColor 220 200 170
-    SetBackgroundColor 120 100 70
+	SetBackgroundColor 120 100 70
 	PlayAlertSound 1
 	
 #----------------------------------------------
-#                        Atlas of Worlds
+#						 Atlas of Worlds
 #----------------------------------------------
 #"Map" oriented AoW currency is given a border to fit the map theme, and categorized by tier
 
@@ -67,7 +67,7 @@ Show
 	PlayAlertSound 3
 	
 #----------------------------------------------
-#                        Essence League
+#						 Essence League
 #----------------------------------------------
 Show
 	Class Currency
@@ -112,69 +112,69 @@ Show
 	SetFontSize 32
 
 Show
-    Class Currency
+	Class Currency
 	SetBackgroundColor 0 0 0 130
 	
 #----------------------------------------------
-#                          Gems
+#						   Gems
 #----------------------------------------------
 #Quality 10+ gems are bordered (teal)
 #Support gems are highlighted
 
 Show
-    Class "Active Skill Gems"
-    Quality >= 10
-    SetBorderColor 27 162 155 255
+	Class "Active Skill Gems"
+	Quality >= 10
+	SetBorderColor 27 162 155 255
 
 Show
-    Class "Support Skill Gems"
-    Quality >= 10
-    SetBackgroundColor 7 40 38 
-    SetBorderColor 27 162 155 255
+	Class "Support Skill Gems"
+	Quality >= 10
+	SetBackgroundColor 7 40 38 
+	SetBorderColor 27 162 155 255
 
 Show
-    Class "Support Skill Gems"
-    SetBackgroundColor 7 40 38 80
+	Class "Support Skill Gems"
+	SetBackgroundColor 7 40 38 80
 	SetFontSize 18
 
 Show 
-    Class Gem
+	Class Gem
 	SetBackgroundColor 0 0 0 80
 	SetFontSize 18
 
 #----------------------------------------------
-#                          Uniques
+#						   Uniques
 #----------------------------------------------
 #All uniques are displayed normally
 #Pushing this block below the socket block could potentionally net you a few jewellers if you skip uniques, I almost always enjoy picking up and IDing even vendor trash uniques, so I enjoy the purity of their nametag being preserved.
 
 Show
-    Rarity Unique
+	Rarity Unique
 	SetFontSize 40
 
 #----------------------------------------------
-#                          Sockets
+#						   Sockets
 #----------------------------------------------
 #Standard items are first sorted by sockets, 5-6L > 6s > chromatic
 
 Show
-    LinkedSockets >= 5
-    SetBorderColor 255 0 0 255
+	LinkedSockets >= 5
+	SetBorderColor 255 0 0 255
 	SetFontSize 50
 	PlayAlertSound 7
 
 Show
-    Sockets = 6 
-    SetBorderColor 250 100 100 255
+	Sockets = 6 
+	SetBorderColor 250 100 100 255
 	SetFontSize 64
 	PlayAlertSound 7
 	
 Show
-    SocketGroup RGB
-    SetBorderColor 255 140 140 255
+	SocketGroup RGB
+	SetBorderColor 255 140 140 255
 
 #----------------------------------------------
-#                          FLASKS
+#						   FLASKS
 #----------------------------------------------
 #Flasks are shown until they are outlevelled by the zone, courtesy of Thiole > http://github.com/Thiole/LootFilter
 #Non-Quality flasks are not not caught in end game (once you're doing 70+ content you probably don't care about life/mana flasks)
@@ -183,80 +183,80 @@ Show
 
 #Flasks above quality 10 are given a white border until end game
 Show
-    Class Flasks
-    Quality >= 10
-    ItemLevel < 70
-    SetBorderColor 255 255 255
+	Class Flasks
+	Quality >= 10
+	ItemLevel < 70
+	SetBorderColor 255 255 255
 
 #Utility flasks are given a slightly opaque background until end game
 Show 
-    Class "Utility Flasks"
-    ItemLevel < 70
-    SetBackgroundColor 50 50 50
+	Class "Utility Flasks"
+	ItemLevel < 70
+	SetBackgroundColor 50 50 50
 
 Show
-    Class "Utility Flasks"
-    Quality >= 10
-    ItemLevel < 70
-    SetBackgroundColor 50 50 50
-    SetBorderColor 255 255 255
+	Class "Utility Flasks"
+	Quality >= 10
+	ItemLevel < 70
+	SetBackgroundColor 50 50 50
+	SetBorderColor 255 255 255
 
 Show
-    BaseType "Small Life Flask"
-    ItemLevel < 12
+	BaseType "Small Life Flask"
+	ItemLevel < 12
 Show
-    BaseType "Medium Life Flask"
-    ItemLevel < 19 
+	BaseType "Medium Life Flask"
+	ItemLevel < 19 
 Show
-    BaseType "Large Life Flask"
-    ItemLevel < 20 
+	BaseType "Large Life Flask"
+	ItemLevel < 20 
 Show
-    BaseType "Greater Life Flask"
-    ItemLevel < 24
+	BaseType "Greater Life Flask"
+	ItemLevel < 24
 Show
-    BaseType "Grand Life Flask"
-    ItemLevel < 30
+	BaseType "Grand Life Flask"
+	ItemLevel < 30
 Show
-    BaseType "Giant Life Flask"
-    ItemLevel < 38
+	BaseType "Giant Life Flask"
+	ItemLevel < 38
 Show
-    BaseType "Colossal Life Flask"
-    ItemLevel < 41
+	BaseType "Colossal Life Flask"
+	ItemLevel < 41
 Show
-    BaseType "Sacred Life Flask"
-    ItemLevel < 49
+	BaseType "Sacred Life Flask"
+	ItemLevel < 49
 Show
-    BaseType "Hallowed Life Flask"
-    ItemLevel < 58
+	BaseType "Hallowed Life Flask"
+	ItemLevel < 58
 Show
-    BaseType "Sanctified Life Flask"
-    ItemLevel < 68
+	BaseType "Sanctified Life Flask"
+	ItemLevel < 68
 
 Show
-    BaseType "Small Mana Flask"
-    ItemLevel < 12
+	BaseType "Small Mana Flask"
+	ItemLevel < 12
 Show
-    BaseType "Medium Mana Flask"
-    ItemLevel < 19 
+	BaseType "Medium Mana Flask"
+	ItemLevel < 19 
 Show
-    BaseType "Large Mana Flask"
-    ItemLevel < 20 
+	BaseType "Large Mana Flask"
+	ItemLevel < 20 
 Show
-    BaseType "Greater Mana Flask"
-    ItemLevel < 24
+	BaseType "Greater Mana Flask"
+	ItemLevel < 24
 Show
-    BaseType "Grand Mana Flask"
-    ItemLevel < 30
+	BaseType "Grand Mana Flask"
+	ItemLevel < 30
 Show
-    BaseType "Giant Mana Flask"
-    ItemLevel < 38
+	BaseType "Giant Mana Flask"
+	ItemLevel < 38
 
 #----------------------------------------------
-#                          Bases
+#						   Bases
 #----------------------------------------------
 #Rings/Amulets/Belts/Jewels are droplevel independent
 Show
-    Class "Rings" "Amulets" "Belts" "Jewel" 
+	Class "Rings" "Amulets" "Belts" "Jewel" 
 
 Show
 	Class "Divination Card"
@@ -265,28 +265,28 @@ Show
 	
 #Caster Weapons are drop level independent, obviously only rares meet this criteria
 Show
-    Class "Wands" "Sceptres"
-    Rarity Rare
+	Class "Wands" "Sceptres"
+	Rarity Rare
 
 #Fishing rods get quest colour 
 Show
-    Class "Fishing Rods"
-    SetTextColor 74 230 58
+	Class "Fishing Rods"
+	SetTextColor 74 230 58
 
 #Vaal/Mortal Fragments are changed to red, this is just personal taste
 #Same applies for the shaper sub-boss fragments
 Show
-    Class "Map Fragments"
-    SetTextColor 255 20 20
-    SetBorderColor 255 20 20
-    SetBackgroundColor 10 20 20
+	Class "Map Fragments"
+	SetTextColor 255 20 20
+	SetBorderColor 255 20 20
+	SetBackgroundColor 10 20 20
 
 #----------------------------------------------
-#                    Labyrinth
+#					 Labyrinth
 #----------------------------------------------
 Show
 	BaseType "Silver Key" "Golden Key" "Treasure Key"
-    SetTextColor 74 230 58  
+	SetTextColor 74 230 58	
 
 #Note that the "cube of absorption" has a capital 'o' in 'Of' unlike other items
 Show
@@ -294,232 +294,232 @@ Show
 	SetTextColor 74 230 58
 	
 Show
-    Class "Quest Items"
+	Class "Quest Items"
 	SetFontSize 50
 
 #----------------------------------------------
-#                    Droplevel dependent clauses
+#					 Droplevel dependent clauses
 #----------------------------------------------
 
 #generated automatically with a simple python script ( https://github.com/DodgySmalls/poegrab )
 
 Show
-    BaseType "Crude Bow" "Glass Shank" "Driftwood Club" "Rusted Sword" "Driftwood Sceptre" "Driftwood Wand" "Plate Vest" "Iron Greaves" "Iron Gauntlets" "Iron Hat" "Splintered Tower Shield"
-    ItemLevel <= 9
+	BaseType "Crude Bow" "Glass Shank" "Driftwood Club" "Rusted Sword" "Driftwood Sceptre" "Driftwood Wand" "Plate Vest" "Iron Greaves" "Iron Gauntlets" "Iron Hat" "Splintered Tower Shield"
+	ItemLevel <= 9
 Show
-    BaseType "Rusted Hatchet" "Shabby Jerkin" "Goathide Buckler"
-    ItemLevel <= 10
+	BaseType "Rusted Hatchet" "Shabby Jerkin" "Goathide Buckler"
+	ItemLevel <= 10
 Show
-    BaseType "Nailed Fist" "Rusted Spike" "Driftwood Maul" "Corroded Blade" "Simple Robe" "Wool Shoes" "Rawhide Boots" "Rawhide Gloves" "Wool Gloves" "Vine Circlet" "Leather Cap" "Twig Spirit Shield"
-    ItemLevel <= 11
+	BaseType "Nailed Fist" "Rusted Spike" "Driftwood Maul" "Corroded Blade" "Simple Robe" "Wool Shoes" "Rawhide Boots" "Rawhide Gloves" "Wool Gloves" "Vine Circlet" "Leather Cap" "Twig Spirit Shield"
+	ItemLevel <= 11
 Show
-    BaseType "Gnarled Branch" "Stone Axe" "Scale Vest" "Padded Vest" "Chainmail Vest" "Fishscale Gauntlets" "Battered Helm" "Scare Mask"
-    ItemLevel <= 12
+	BaseType "Gnarled Branch" "Stone Axe" "Scale Vest" "Padded Vest" "Chainmail Vest" "Fishscale Gauntlets" "Battered Helm" "Scare Mask"
+	ItemLevel <= 12
 Show
-    BaseType "Short Bow" "Skinning Knife" "Tribal Club" "Copper Sword" "Darkwood Sceptre" "Chain Boots" "Wrapped Mitts" "Rusted Coif" "Rotted Round Shield" "Spiked Bundle" "Corroded Tower Shield"
-    ItemLevel <= 13
+	BaseType "Short Bow" "Skinning Knife" "Tribal Club" "Copper Sword" "Darkwood Sceptre" "Chain Boots" "Wrapped Mitts" "Rusted Coif" "Rotted Round Shield" "Spiked Bundle" "Corroded Tower Shield"
+	ItemLevel <= 13
 Show
-    BaseType "Jade Hatchet" "Chestplate" "Wrapped Boots" "Leatherscale Boots"
-    ItemLevel <= 14
+	BaseType "Jade Hatchet" "Chestplate" "Wrapped Boots" "Leatherscale Boots"
+	ItemLevel <= 14
 Show
-    BaseType "Sharktooth Claw" "Whalebone Rapier" "Chain Gloves" "Cone Helmet" "Plank Kite Shield"
-    ItemLevel <= 15
+	BaseType "Sharktooth Claw" "Whalebone Rapier" "Chain Gloves" "Cone Helmet" "Plank Kite Shield"
+	ItemLevel <= 15
 Show
-    BaseType "Tribal Maul" "Longsword" "Chainmail Tunic" "Light Brigandine" "Iron Circlet" "Pine Buckler"
-    ItemLevel <= 16
+	BaseType "Tribal Maul" "Longsword" "Chainmail Tunic" "Light Brigandine" "Iron Circlet" "Pine Buckler"
+	ItemLevel <= 16
 Show
-    BaseType "Long Bow" "Primitive Staff" "Jade Chopper" "Strapped Leather" "Oiled Vest" "Steel Greaves" "Velvet Slippers" "Goathide Gloves" "Yew Spirit Shield"
-    ItemLevel <= 17
+	BaseType "Long Bow" "Primitive Staff" "Jade Chopper" "Strapped Leather" "Oiled Vest" "Steel Greaves" "Velvet Slippers" "Goathide Gloves" "Yew Spirit Shield"
+	ItemLevel <= 17
 Show
-    BaseType "Carving Knife" "Spiked Club" "Sabre" "Bronze Sceptre" "Tricorne" "Plague Mask"
-    ItemLevel <= 18
+	BaseType "Carving Knife" "Spiked Club" "Sabre" "Bronze Sceptre" "Tricorne" "Plague Mask"
+	ItemLevel <= 18
 Show
-    BaseType "Boarding Axe" "Silken Vest" "Plated Gauntlets" "Rawhide Tower Shield"
-    ItemLevel <= 19
+	BaseType "Boarding Axe" "Silken Vest" "Plated Gauntlets" "Rawhide Tower Shield"
+	ItemLevel <= 19
 Show
-    BaseType "Awl" "Battered Foil" "Mallet" "Bastard Sword" "Carved Wand" "Goathide Boots" "Velvet Gloves" "Golden Bracers" "Soldier Helmet" "Fir Round Shield" "Driftwood Spiked Shield"
-    ItemLevel <= 20
+	BaseType "Awl" "Battered Foil" "Mallet" "Bastard Sword" "Carved Wand" "Goathide Boots" "Velvet Gloves" "Golden Bracers" "Soldier Helmet" "Fir Round Shield" "Driftwood Spiked Shield"
+	ItemLevel <= 20
 Show
-    BaseType "Long Staff" "Woodsplitter" "Ringmail Boots" "Sallet" "Linden Kite Shield"
-    ItemLevel <= 21
+	BaseType "Long Staff" "Woodsplitter" "Ringmail Boots" "Sallet" "Linden Kite Shield"
+	ItemLevel <= 21
 Show
-    BaseType "Composite Bow"
-    ItemLevel <= 22
+	BaseType "Composite Bow"
+	ItemLevel <= 22
 Show
-    BaseType "Stiletto" "Stone Hammer" "Broad Sword" "Quartz Sceptre" "Ironscale Gauntlets" "Bone Spirit Shield"
-    ItemLevel <= 23
+	BaseType "Stiletto" "Stone Hammer" "Broad Sword" "Quartz Sceptre" "Ironscale Gauntlets" "Bone Spirit Shield"
+	ItemLevel <= 23
 Show
-    BaseType "Cleaver" "Strapped Boots" "Strapped Mitts" "Painted Buckler"
-    ItemLevel <= 24
+	BaseType "Cleaver" "Strapped Boots" "Strapped Mitts" "Painted Buckler"
+	ItemLevel <= 24
 Show
-    BaseType "Basket Rapier" "Sledgehammer" "Buckskin Tunic" "Copper Plate" "Ringmail Coat" "Scale Doublet" "Torture Cage" "Iron Mask" "Cedar Tower Shield"
-    ItemLevel <= 25
+	BaseType "Basket Rapier" "Sledgehammer" "Buckskin Tunic" "Copper Plate" "Ringmail Coat" "Scale Doublet" "Torture Cage" "Iron Mask" "Cedar Tower Shield"
+	ItemLevel <= 25
 Show
-    BaseType "Recurve Bow" "Iron Staff" "Poleaxe" "Quartz Wand" "Padded Jacket" "Ironscale Boots" "Barbute Helmet"
-    ItemLevel <= 26
+	BaseType "Recurve Bow" "Iron Staff" "Poleaxe" "Quartz Wand" "Padded Jacket" "Ironscale Boots" "Barbute Helmet"
+	ItemLevel <= 26
 Show
-    BaseType "Ringmail Gloves"
-    ItemLevel <= 27
+	BaseType "Ringmail Gloves"
+	ItemLevel <= 27
 Show
-    BaseType "Boot Knife" "War Hammer" "War Sword" "Iron Sceptre" "Leather Hood" "Studded Round Shield" "Alloyed Spiked Shield" "Reinforced Kite Shield"
-    ItemLevel <= 30
+	BaseType "Boot Knife" "War Hammer" "War Sword" "Iron Sceptre" "Leather Hood" "Studded Round Shield" "Alloyed Spiked Shield" "Reinforced Kite Shield"
+	ItemLevel <= 30
 Show
-    BaseType "Broad Axe" "Chainmail Doublet" "War Plate" "Infantry Brigandine" "Deerskin Gloves"
-    ItemLevel <= 31
+	BaseType "Broad Axe" "Chainmail Doublet" "War Plate" "Infantry Brigandine" "Deerskin Gloves"
+	ItemLevel <= 31
 Show
-    BaseType "Blinder" "Jagged Foil" "Jagged Maul" "Etched Greatsword" "Oiled Coat" "Deerskin Boots" "Silk Slippers" "Great Helmet"
-    ItemLevel <= 32
+	BaseType "Blinder" "Jagged Foil" "Jagged Maul" "Etched Greatsword" "Oiled Coat" "Deerskin Boots" "Silk Slippers" "Great Helmet"
+	ItemLevel <= 32
 Show
-    BaseType "Bone Bow" "Coiled Staff" "Double Axe" "Plated Greaves" "Bronze Gauntlets" "Visored Sallet" "Hammered Buckler" "Tarnished Spirit Shield"
-    ItemLevel <= 33
+	BaseType "Bone Bow" "Coiled Staff" "Double Axe" "Plated Greaves" "Bronze Gauntlets" "Visored Sallet" "Hammered Buckler" "Tarnished Spirit Shield"
+	ItemLevel <= 33
 Show
-    BaseType "Copper Kris" "Bladed Mace" "Ancient Sword" "Ochre Sceptre" "Spiraled Wand" "Copper Tower Shield"
-    ItemLevel <= 34
+	BaseType "Copper Kris" "Bladed Mace" "Ancient Sword" "Ochre Sceptre" "Spiraled Wand" "Copper Tower Shield"
+	ItemLevel <= 34
 Show
-    BaseType "Arming Axe" "Wild Leather" "Silken Garb" "Silk Gloves"
-    ItemLevel <= 35
+	BaseType "Arming Axe" "Wild Leather" "Silken Garb" "Silk Gloves"
+	ItemLevel <= 35
 Show
-    BaseType "Timeworn Claw" "Antique Rapier" "Close Helmet" "Tribal Circlet"
-    ItemLevel <= 36
+	BaseType "Timeworn Claw" "Antique Rapier" "Close Helmet" "Tribal Circlet"
+	ItemLevel <= 36
 Show
-    BaseType "Brass Maul" "Ornate Sword" "Clasped Boots" "Bronzescale Gauntlets" "Layered Kite Shield" "Burnished Spiked Shield" "Scarlet Round Shield"
-    ItemLevel <= 37
+	BaseType "Brass Maul" "Ornate Sword" "Clasped Boots" "Bronzescale Gauntlets" "Layered Kite Shield" "Burnished Spiked Shield" "Scarlet Round Shield"
+	ItemLevel <= 37
 Show
-    BaseType "Royal Bow" "Skean" "Ceremonial Mace" "Elegant Sword" "Ritual Sceptre" "Royal Staff" "Gilded Axe" "Scarlet Raiment" "Full Ringmail" "Full Scale Armour" "Full Leather" "Full Plate" "Mesh Boots" "Festival Mask" "Jingling Spirit Shield"
-    ItemLevel <= 38
+	BaseType "Royal Bow" "Skean" "Ceremonial Mace" "Elegant Sword" "Ritual Sceptre" "Royal Staff" "Gilded Axe" "Scarlet Raiment" "Full Ringmail" "Full Scale Armour" "Full Leather" "Full Plate" "Mesh Boots" "Festival Mask" "Jingling Spirit Shield"
+	ItemLevel <= 38
 Show
-    BaseType "Decorative Axe" "War Buckler"
-    ItemLevel <= 39
+	BaseType "Decorative Axe" "War Buckler"
+	ItemLevel <= 39
 Show
-    BaseType "Sparkling Claw" "Elegant Foil" "Sage Wand" "Bronzescale Boots" "Wolf Pelt" "Reinforced Tower Shield"
-    ItemLevel <= 40
+	BaseType "Sparkling Claw" "Elegant Foil" "Sage Wand" "Bronzescale Boots" "Wolf Pelt" "Reinforced Tower Shield"
+	ItemLevel <= 40
 Show
-    BaseType "Clasped Mitts" "Crusader Helmet"
-    ItemLevel <= 41
+	BaseType "Clasped Mitts" "Crusader Helmet"
+	ItemLevel <= 41
 Show
-    BaseType "Death Bow" "Imp Dagger" "Dream Mace" "Dusk Blade" "Shadow Sceptre" "Fright Maul" "Spectral Sword" "Waxed Garb" "Silk Robe" "Arena Plate" "Full Chainmail" "Sun Leather" "Scholar Boots" "Mesh Gloves"
-    ItemLevel <= 42
+	BaseType "Death Bow" "Imp Dagger" "Dream Mace" "Dusk Blade" "Shadow Sceptre" "Fright Maul" "Spectral Sword" "Waxed Garb" "Silk Robe" "Arena Plate" "Full Chainmail" "Sun Leather" "Scholar Boots" "Mesh Gloves"
+	ItemLevel <= 42
 Show
-    BaseType "Spectral Axe" "Vile Staff" "Shadow Axe" "Reinforced Greaves" "Nubuck Gloves" "Gilded Sallet" "Ornate Spiked Shield" "Splendid Round Shield" "Brass Spirit Shield"
-    ItemLevel <= 43
+	BaseType "Spectral Axe" "Vile Staff" "Shadow Axe" "Reinforced Greaves" "Nubuck Gloves" "Gilded Sallet" "Ornate Spiked Shield" "Splendid Round Shield" "Brass Spirit Shield"
+	ItemLevel <= 43
 Show
-    BaseType "Fright Claw" "Wyrm Mace" "Hook Sword" "Thorn Rapier" "Morning Star" "Pagan Wand" "Shackled Boots" "Nubuck Boots" "Bone Circlet" "Ceremonial Kite Shield" "Gilded Buckler"
-    ItemLevel <= 44
+	BaseType "Fright Claw" "Wyrm Mace" "Hook Sword" "Thorn Rapier" "Morning Star" "Pagan Wand" "Shackled Boots" "Nubuck Boots" "Bone Circlet" "Ceremonial Kite Shield" "Gilded Buckler"
+	ItemLevel <= 44
 Show
-    BaseType "Grove Bow" "Flaying Knife" "Etched Hatchet" "Petrified Club" "Variscite Blade" "Grinning Fetish" "Curved Blade" "Field Lamellar" "Cabalist Regalia" "Holy Chainmail" "Bone Armour" "Lordly Plate" "Steel Gauntlets" "Golden Mask" "Gladiator Helmet" "Painted Tower Shield"
-    ItemLevel <= 45
+	BaseType "Grove Bow" "Flaying Knife" "Etched Hatchet" "Petrified Club" "Variscite Blade" "Grinning Fetish" "Curved Blade" "Field Lamellar" "Cabalist Regalia" "Holy Chainmail" "Bone Armour" "Lordly Plate" "Steel Gauntlets" "Golden Mask" "Gladiator Helmet" "Painted Tower Shield"
+	ItemLevel <= 45
 Show
-    BaseType "Reflex Bow" "Double Claw" "Prong Dagger" "Jasper Axe" "Horned Sceptre" "Crescent Staff" "Smallsword" "Dagger Axe" "Totemic Maul" "Butcher Sword" "Steelscale Boots" "Riveted Boots" "Trapper Mitts" "Embroidered Gloves" "Steelscale Gauntlets" "Secutor Helm"
-    ItemLevel <= 46
+	BaseType "Reflex Bow" "Double Claw" "Prong Dagger" "Jasper Axe" "Horned Sceptre" "Crescent Staff" "Smallsword" "Dagger Axe" "Totemic Maul" "Butcher Sword" "Steelscale Boots" "Riveted Boots" "Trapper Mitts" "Embroidered Gloves" "Steelscale Gauntlets" "Secutor Helm"
+	ItemLevel <= 46
 Show
-    BaseType "Thresher Claw" "Woodful Staff" "Wyrmbone Rapier" "Jasper Chopper" "Bronze Plate" "Eelskin Tunic" "Antique Greaves" "Riveted Gloves" "Aventail Helmet" "Walnut Spirit Shield"
-    ItemLevel <= 47
+	BaseType "Thresher Claw" "Woodful Staff" "Wyrmbone Rapier" "Jasper Chopper" "Bronze Plate" "Eelskin Tunic" "Antique Greaves" "Riveted Gloves" "Aventail Helmet" "Walnut Spirit Shield"
+	ItemLevel <= 47
 Show
-    BaseType "Decurve Bow" "Butcher Knife" "Barbed Club" "Cutlass" "Sekhem" "Wyrmscale Doublet" "Satin Slippers" "Eelskin Gloves" "Raven Mask" "Oak Buckler"
-    ItemLevel <= 48
+	BaseType "Decurve Bow" "Butcher Knife" "Barbed Club" "Cutlass" "Sekhem" "Wyrmscale Doublet" "Satin Slippers" "Eelskin Gloves" "Raven Mask" "Oak Buckler"
+	ItemLevel <= 48
 Show
-    BaseType "Tomahawk" "Latticed Ringmail" "Eelskin Boots" "Antique Gauntlets" "Lunaris Circlet" "Redwood Spiked Shield" "Maple Round Shield" "Buckskin Tower Shield"
-    ItemLevel <= 49
+	BaseType "Tomahawk" "Latticed Ringmail" "Eelskin Boots" "Antique Gauntlets" "Lunaris Circlet" "Redwood Spiked Shield" "Maple Round Shield" "Buckskin Tower Shield"
+	ItemLevel <= 49
 Show
-    BaseType "Gouger" "Burnished Foil" "Great Mallet" "Footman Sword" "Engraved Wand" "Quilted Jacket" "Zealot Boots" "Reaver Helmet" "Etched Kite Shield"
-    ItemLevel <= 50
+	BaseType "Gouger" "Burnished Foil" "Great Mallet" "Footman Sword" "Engraved Wand" "Quilted Jacket" "Zealot Boots" "Reaver Helmet" "Etched Kite Shield"
+	ItemLevel <= 50
 Show
-    BaseType "Compound Bow" "Poignard" "Rock Breaker" "Baselard" "Crystal Sceptre" "Quarterstaff" "Timber Axe" "Frontier Leather" "Battle Plate" "Silken Wrap" "Trapper Boots" "Satin Gloves" "Hunter Hood" "Ivory Spirit Shield"
-    ItemLevel <= 51
+	BaseType "Compound Bow" "Poignard" "Rock Breaker" "Baselard" "Crystal Sceptre" "Quarterstaff" "Timber Axe" "Frontier Leather" "Battle Plate" "Silken Wrap" "Trapper Boots" "Satin Gloves" "Hunter Hood" "Ivory Spirit Shield"
+	ItemLevel <= 51
 Show
-    BaseType "Wrist Chopper" "Hussar Brigandine" "Serpentscale Boots" "Enameled Buckler"
-    ItemLevel <= 52
+	BaseType "Wrist Chopper" "Hussar Brigandine" "Serpentscale Boots" "Enameled Buckler"
+	ItemLevel <= 52
 Show
-    BaseType "Estoc" "Crusader Chainmail" "Zealot Gloves" "Serpentscale Gauntlets" "Fencer Helm" "Mahogany Tower Shield"
-    ItemLevel <= 53
+	BaseType "Estoc" "Crusader Chainmail" "Zealot Gloves" "Serpentscale Gauntlets" "Fencer Helm" "Mahogany Tower Shield"
+	ItemLevel <= 53
 Show
-    BaseType "Sniper Bow" "Boot Blade" "Battle Hammer" "Battle Sword" "Lead Sceptre" "Steelhead" "Highland Blade" "Sleek Coat" "Sharkskin Boots" "Samite Slippers" "Zealot Helmet"
-    ItemLevel <= 54
+	BaseType "Sniper Bow" "Boot Blade" "Battle Hammer" "Battle Sword" "Lead Sceptre" "Steelhead" "Highland Blade" "Sleek Coat" "Sharkskin Boots" "Samite Slippers" "Zealot Helmet"
+	ItemLevel <= 54
 Show
-    BaseType "War Axe" "Military Staff" "Headsman Axe" "Crystal Wand" "Sun Plate" "Glorious Leather" "Sharkskin Gloves" "Ambush Mitts" "Callous Mask" "Compound Spiked Shield" "Spiked Round Shield" "Ancient Spirit Shield"
-    ItemLevel <= 55
+	BaseType "War Axe" "Military Staff" "Headsman Axe" "Crystal Wand" "Sun Plate" "Glorious Leather" "Sharkskin Gloves" "Ambush Mitts" "Callous Mask" "Compound Spiked Shield" "Spiked Round Shield" "Ancient Spirit Shield"
+	ItemLevel <= 55
 Show
-    BaseType "Gut Ripper" "Serrated Foil" "Full Wyrmscale" "Ancient Greaves" "Corrugated Buckler" "Steel Kite Shield"
-    ItemLevel <= 56
+	BaseType "Gut Ripper" "Serrated Foil" "Full Wyrmscale" "Ancient Greaves" "Corrugated Buckler" "Steel Kite Shield"
+	ItemLevel <= 56
 Show
-    BaseType "Ivory Bow" "Golden Kris" "Flanged Mace" "Elder Sword" "Blood Sceptre" "Ornate Ringmail" "Ambush Boots" "Samite Gloves" "Ancient Gauntlets" "Noble Tricorne" "Bronze Tower Shield"
-    ItemLevel <= 57
+	BaseType "Ivory Bow" "Golden Kris" "Flanged Mace" "Elder Sword" "Blood Sceptre" "Ornate Ringmail" "Ambush Boots" "Samite Gloves" "Ancient Gauntlets" "Noble Tricorne" "Bronze Tower Shield"
+	ItemLevel <= 57
 Show
-    BaseType "Chest Splitter" "Spiny Maul" "Engraved Greatsword" "Crimson Raiment" "Steel Circlet" "Siege Helmet"
-    ItemLevel <= 58
+	BaseType "Chest Splitter" "Spiny Maul" "Engraved Greatsword" "Crimson Raiment" "Steel Circlet" "Siege Helmet"
+	ItemLevel <= 58
 Show
-    BaseType "Prehistoric Claw" "Serpentine Staff" "Primeval Rapier" "Labrys" "Serpent Wand" "Coronal Leather" "Spidersilk Robe" "Colosseum Plate" "Soldier Boots" "Wyrmscale Gauntlets" "Crimson Round Shield" "Chiming Spirit Shield" "Polished Spiked Shield"
-    ItemLevel <= 59
+	BaseType "Prehistoric Claw" "Serpentine Staff" "Primeval Rapier" "Labrys" "Serpent Wand" "Coronal Leather" "Spidersilk Robe" "Colosseum Plate" "Soldier Boots" "Wyrmscale Gauntlets" "Crimson Round Shield" "Chiming Spirit Shield" "Polished Spiked Shield"
+	ItemLevel <= 59
 Show
-    BaseType "Highborn Bow" "Royal Skean" "Ornate Mace" "Graceful Sword" "Royal Sceptre" "Carnal Mitts" "Laminated Kite Shield" "Battle Buckler"
-    ItemLevel <= 62
+	BaseType "Highborn Bow" "Royal Skean" "Ornate Mace" "Graceful Sword" "Royal Sceptre" "Carnal Mitts" "Laminated Kite Shield" "Battle Buckler"
+	ItemLevel <= 62
 Show
-    BaseType "Ceremonial Axe" "Plated Maul" "Tiger Sword" "Chain Hauberk" "Wyrmscale Boots" "Soldier Gloves" "Lacquered Helmet" "Girded Tower Shield"
-    ItemLevel <= 63
+	BaseType "Ceremonial Axe" "Plated Maul" "Tiger Sword" "Chain Hauberk" "Wyrmscale Boots" "Soldier Gloves" "Lacquered Helmet" "Girded Tower Shield"
+	ItemLevel <= 63
 Show
-    BaseType "Noble Claw" "Highborn Staff" "Fancy Foil" "Noble Axe" "Lacquered Garb" "Regicide Mask"
-    ItemLevel <= 64
+	BaseType "Noble Claw" "Highborn Staff" "Fancy Foil" "Noble Axe" "Lacquered Garb" "Regicide Mask"
+	ItemLevel <= 64
 Show
-    BaseType "Decimation Bow" "Fiend Dagger" "Phantom Mace" "Twilight Blade" "Abyssal Sceptre" "Omen Wand" "Destroyer Regalia" "Majestic Plate" "Conjurer Boots" "Goliath Gauntlets" "Great Crown" "Thorium Spirit Shield"
-    ItemLevel <= 65
+	BaseType "Decimation Bow" "Fiend Dagger" "Phantom Mace" "Twilight Blade" "Abyssal Sceptre" "Omen Wand" "Destroyer Regalia" "Majestic Plate" "Conjurer Boots" "Goliath Gauntlets" "Great Crown" "Thorium Spirit Shield"
+	ItemLevel <= 65
 Show
-    BaseType "Wraith Axe" "Dread Maul" "Wraith Sword" "Battle Lamellar" "Goliath Greaves" "Shagreen Gloves" "Necromancer Circlet" "Golden Buckler" "Sovereign Spiked Shield" "Baroque Round Shield"
-    ItemLevel <= 66
+	BaseType "Wraith Axe" "Dread Maul" "Wraith Sword" "Battle Lamellar" "Goliath Greaves" "Shagreen Gloves" "Necromancer Circlet" "Golden Buckler" "Sovereign Spiked Shield" "Baroque Round Shield"
+	ItemLevel <= 66
 Show
-    BaseType "Eagle Claw" "Trisula" "Dragon Mace" "Grappler" "Stag Sceptre" "Foul Staff" "Apex Rapier" "Abyssal Axe" "Heathen Wand" "Devout Chainmail" "Shagreen Boots" "Carnal Boots" "Conjurer Gloves" "Ursine Pelt" "Samite Helmet" "Angelic Kite Shield" "Crested Tower Shield"
-    ItemLevel <= 67
+	BaseType "Eagle Claw" "Trisula" "Dragon Mace" "Grappler" "Stag Sceptre" "Foul Staff" "Apex Rapier" "Abyssal Axe" "Heathen Wand" "Devout Chainmail" "Shagreen Boots" "Carnal Boots" "Conjurer Gloves" "Ursine Pelt" "Samite Helmet" "Angelic Kite Shield" "Crested Tower Shield"
+	ItemLevel <= 67
 Show
-    BaseType "Gutting Knife" "Engraved Hatchet" "Ancestral Club" "Gemstone Sword" "Karui Sceptre" "Solar Maul" "Lithe Blade" "Crypt Armour" "Golden Plate" "Sharkskin Tunic" "Lacewood Spirit Shield"
-    ItemLevel <= 68
+	BaseType "Gutting Knife" "Engraved Hatchet" "Ancestral Club" "Gemstone Sword" "Karui Sceptre" "Solar Maul" "Lithe Blade" "Crypt Armour" "Golden Plate" "Sharkskin Tunic" "Lacewood Spirit Shield"
+	ItemLevel <= 68
 Show
-    BaseType "Steelwood Bow" "Twin Claw" "Karui Axe" "Moon Staff" "Courtesan Sword" "Karui Maul" "Dragonscale Doublet" "Legion Gloves" "Harlequin Mask" "Ironwood Buckler"
-    ItemLevel <= 69
+	BaseType "Steelwood Bow" "Twin Claw" "Karui Axe" "Moon Staff" "Courtesan Sword" "Karui Maul" "Dragonscale Doublet" "Legion Gloves" "Harlequin Mask" "Ironwood Buckler"
+	ItemLevel <= 69
 Show
-    BaseType "Citadel Bow" "Great White Claw" "Slaughter Knife" "Tenderizer" "Corsair Sword" "Primordial Staff" "Dragonbone Rapier" "Karui Chopper" "Loricated Ringmail" "Legion Boots" "Fluted Bascinet" "Magistrate Crown" "Alder Spiked Shield" "Shagreen Tower Shield" "Teak Round Shield"
-    ItemLevel <= 70
+	BaseType "Citadel Bow" "Great White Claw" "Slaughter Knife" "Tenderizer" "Corsair Sword" "Primordial Staff" "Dragonbone Rapier" "Karui Chopper" "Loricated Ringmail" "Legion Boots" "Fluted Bascinet" "Magistrate Crown" "Alder Spiked Shield" "Shagreen Tower Shield" "Teak Round Shield"
+	ItemLevel <= 70
 Show
-    BaseType "Colossus Mallet" "Reaver Sword" "Destiny Leather" "Crusader Plate" "Necromancer Silks" "Sentinel Jacket" "Hydrascale Boots" "Hydrascale Gauntlets" "Solaris Circlet" "Branded Kite Shield" "Fossilised Spirit Shield"
-    ItemLevel <= 71
+	BaseType "Colossus Mallet" "Reaver Sword" "Destiny Leather" "Crusader Plate" "Necromancer Silks" "Sentinel Jacket" "Hydrascale Boots" "Hydrascale Gauntlets" "Solaris Circlet" "Branded Kite Shield" "Fossilised Spirit Shield"
+	ItemLevel <= 71
 Show
-    BaseType "Throat Stabber" "Gavel" "Gladius" "Opal Sceptre" "Tempered Foil" "Sundering Axe" "Desert Brigandine" "Arcanist Gloves" "Lacquered Buckler"
-    ItemLevel <= 72
+	BaseType "Throat Stabber" "Gavel" "Gladius" "Opal Sceptre" "Tempered Foil" "Sundering Axe" "Desert Brigandine" "Arcanist Gloves" "Lacquered Buckler"
+	ItemLevel <= 72
 Show
-    BaseType "Reaver Axe" "Ezomyte Blade" "Conquest Chainmail" "Arcanist Slippers" "Ebony Tower Shield"
-    ItemLevel <= 73
+	BaseType "Reaver Axe" "Ezomyte Blade" "Conquest Chainmail" "Arcanist Slippers" "Ebony Tower Shield"
+	ItemLevel <= 73
 Show
-    BaseType "Ezomyte Dagger" "Legion Hammer" "Platinum Sceptre" "Ezomyte Staff" "Opal Wand" "Exquisite Leather" "Varnished Coat" "Astral Plate" "Stealth Boots" "Vaal Greaves" "Stealth Gloves" "Vaal Mask" "Spiny Round Shield" "Ezomyte Spiked Shield" "Vaal Spirit Shield" "Champion Kite Shield"
-    ItemLevel <= 74
+	BaseType "Ezomyte Dagger" "Legion Hammer" "Platinum Sceptre" "Ezomyte Staff" "Opal Wand" "Exquisite Leather" "Varnished Coat" "Astral Plate" "Stealth Boots" "Vaal Greaves" "Stealth Gloves" "Vaal Mask" "Spiny Round Shield" "Ezomyte Spiked Shield" "Vaal Spirit Shield" "Champion Kite Shield"
+	ItemLevel <= 74
 Show
-    BaseType "Butcher Axe" "Vaal Greatsword" "Full Dragonscale" "Vaal Gauntlets" "Prophet Crown" "Vaal Buckler"
-    ItemLevel <= 75
+	BaseType "Butcher Axe" "Vaal Greatsword" "Full Dragonscale" "Vaal Gauntlets" "Prophet Crown" "Vaal Buckler"
+	ItemLevel <= 75
 Show
-    BaseType "Eye Gouger" "Platinum Kris" "Pernarch" "Vaal Sceptre" "Elegant Ringmail" "Sinner Tricorne" "Ezomyte Tower Shield"
-    ItemLevel <= 76
+	BaseType "Eye Gouger" "Platinum Kris" "Pernarch" "Vaal Sceptre" "Elegant Ringmail" "Sinner Tricorne" "Ezomyte Tower Shield"
+	ItemLevel <= 76
 Show
-    BaseType "Imperial Maul" "Tornado Wand" "Blood Raiment" "Widowsilk Robe" "Zodiac Leather" "Gladiator Plate" "Dragonscale Boots" "Mind Cage" "Mosaic Kite Shield"
-    ItemLevel <= 77
+	BaseType "Imperial Maul" "Tornado Wand" "Blood Raiment" "Widowsilk Robe" "Zodiac Leather" "Gladiator Plate" "Dragonscale Boots" "Mind Cage" "Mosaic Kite Shield"
+	ItemLevel <= 77
 Show
-    BaseType "Auric Mace" "Carnal Sceptre" "Imperial Staff" "Vaal Rapier" "Crusader Gloves" "Mirrored Spiked Shield" "Crusader Buckler" "Cardinal Round Shield"
-    ItemLevel <= 78
+	BaseType "Auric Mace" "Carnal Sceptre" "Imperial Staff" "Vaal Rapier" "Crusader Gloves" "Mirrored Spiked Shield" "Crusader Buckler" "Cardinal Round Shield"
+	ItemLevel <= 78
 Show
-    BaseType "Royal Axe" "Terror Maul" "Nightmare Bascinet"
-    ItemLevel <= 79
+	BaseType "Royal Axe" "Terror Maul" "Nightmare Bascinet"
+	ItemLevel <= 79
 Show
-    BaseType "Demon Dagger" "Nightmare Mace" "Midnight Blade" "Void Sceptre" "Judgement Staff" "Prophecy Wand"
-    ItemLevel <= 80
+	BaseType "Demon Dagger" "Nightmare Mace" "Midnight Blade" "Void Sceptre" "Judgement Staff" "Prophecy Wand"
+	ItemLevel <= 80
 Show
-    BaseType "Triumphant Lamellar"
-    ItemLevel <= 81
+	BaseType "Triumphant Lamellar"
+	ItemLevel <= 81
 Show
-    BaseType "Terror Claw" "Harpy Rapier" "Fleshripper" "Elegant Round Shield" "Pinnacle Tower Shield"
-    ItemLevel <= 82
+	BaseType "Terror Claw" "Harpy Rapier" "Fleshripper" "Elegant Round Shield" "Pinnacle Tower Shield"
+	ItemLevel <= 82
 
 #BIS block
 Show
-    BaseType "Thicket Bow" "Ranger Bow" "Assassin Bow" "Spine Bow" "Imperial Bow" "Harbinger Bow" "Maraketh Bow" "Hellion's Paw" "Vaal Claw" "Imperial Claw" "Gemini Claw" "Ambusher" "Imperial Skean" "Sai" "Siege Axe" "Infernal Axe" "Runic Hatchet" "Vaal Hatchet" "Behemoth Mace" "Eternal Sword" "Legion Sword" "Vaal Blade" "Tiger Hook" "Sambar Sceptre" "Lathi" "Eclipse Staff" "Spiraled Foil" "Jewelled Foil" "Dragoon Sword" "Pecoraro" "Vaal Axe" "Despot Axe" "Void Axe" "Ezomyte Axe" "Talon Axe" "Piledriver" "Meatgrinder" "Coronal Maul" "Lion Sword" "Infernal Sword" "Exquisite Blade" "Imbued Wand" "Profane Wand" "Sacrificial Garb" "Carnal Armour" "Saintly Chainmail" "Assassin's Garb" "Glorious Plate" "Saint's Hauberk" "Sadist Garb" "Vaal Regalia" "Slink Boots" "Murder Boots" "Titan Greaves" "Sorcerer Boots" "Crusader Boots" "Slink Gloves" "Titan Gauntlets" "Sorcerer Gloves" "Dragonscale Gauntlets" "Murder Mitts" "Lion Pelt" "Hubris Circlet" "Eternal Burgonet" "Praetor Crown" "Deicide Mask" "Royal Burgonet" "Ezomyte Burgonet" "Silken Hood" "Colossal Tower Shield" "Supreme Spiked Shield" "Imperial Buckler" "Titanium Spirit Shield" "Harmonic Spirit Shield" "Archon Kite Shield" "Bone Helmet" "Two-Toned Boots" "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves"
+	BaseType "Thicket Bow" "Ranger Bow" "Assassin Bow" "Spine Bow" "Imperial Bow" "Harbinger Bow" "Maraketh Bow" "Hellion's Paw" "Vaal Claw" "Imperial Claw" "Gemini Claw" "Ambusher" "Imperial Skean" "Sai" "Siege Axe" "Infernal Axe" "Runic Hatchet" "Vaal Hatchet" "Behemoth Mace" "Eternal Sword" "Legion Sword" "Vaal Blade" "Tiger Hook" "Sambar Sceptre" "Lathi" "Eclipse Staff" "Spiraled Foil" "Jewelled Foil" "Dragoon Sword" "Pecoraro" "Vaal Axe" "Despot Axe" "Void Axe" "Ezomyte Axe" "Talon Axe" "Piledriver" "Meatgrinder" "Coronal Maul" "Lion Sword" "Infernal Sword" "Exquisite Blade" "Imbued Wand" "Profane Wand" "Sacrificial Garb" "Carnal Armour" "Saintly Chainmail" "Assassin's Garb" "Glorious Plate" "Saint's Hauberk" "Sadist Garb" "Vaal Regalia" "Slink Boots" "Murder Boots" "Titan Greaves" "Sorcerer Boots" "Crusader Boots" "Slink Gloves" "Titan Gauntlets" "Sorcerer Gloves" "Dragonscale Gauntlets" "Murder Mitts" "Lion Pelt" "Hubris Circlet" "Eternal Burgonet" "Praetor Crown" "Deicide Mask" "Royal Burgonet" "Ezomyte Burgonet" "Silken Hood" "Colossal Tower Shield" "Supreme Spiked Shield" "Imperial Buckler" "Titanium Spirit Shield" "Harmonic Spirit Shield" "Archon Kite Shield" "Bone Helmet" "Two-Toned Boots" "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves"
 
 #----------------------------------------------
-#                         Maps
+#						  Maps
 #----------------------------------------------
 #Maps border categorized by their tier (white/yellow/red)
 
@@ -543,29 +543,29 @@ Show
 	Class Map
 	
 #----------------------------------------------
-#                         "Unwanted" Catch
+#						  "Unwanted" Catch
 #----------------------------------------------
 #The above block shows us all base items that are near our level, but high itemlevel low basetype items fall through, here we catch them and change how they are displayed.
 
 Show
-    Rarity Rare
-    SetTextColor 227 227 106 255
-    SetBackgroundColor 0 0 0 0
-    SetFontSize 24
+	Rarity Rare
+	SetTextColor 227 227 106 255
+	SetBackgroundColor 0 0 0 0
+	SetFontSize 24
 
 Show
-    Rarity Magic
-    SetTextColor 126 126 216 255
-    SetBackgroundColor 0 0 0 0
-    SetFontSize 24
+	Rarity Magic
+	SetTextColor 126 126 216 255
+	SetBackgroundColor 0 0 0 0
+	SetFontSize 24
 
 Show
-    Rarity Normal
-    SetTextColor 200 200 200 255
-    SetBackgroundColor 0 0 0 0
-    SetFontSize 24
+	Rarity Normal
+	SetTextColor 200 200 200 255
+	SetBackgroundColor 0 0 0 0
+	SetFontSize 24
 
 #UNCONDITIONAL (forward compatible) (red for my testing purposes)
 Show
 	SetTextColor 150 0 0
-    SetFontSize 24
+	SetFontSize 24
