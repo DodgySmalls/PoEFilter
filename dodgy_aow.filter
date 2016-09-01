@@ -1,11 +1,11 @@
 #----------------------------------------------
 #                          Currency
 #----------------------------------------------
-#"Greater" currency is shown with an opaque background
-# Uninform other than mirror's tag being coloured like a mirror, and given an alert sound
+#"Greater" currency is shown with an opaque background, enlarged font, and accompanied by sounds for each tier
+# More average currency is shown at normal size, but the useful stuff is accompanied by a sound
 
 Show
-    BaseType "Mirror of Kalandra"
+	BaseType "Mirror of Kalandra"
     SetTextColor 0 0 0
 	SetFontSize 64
     SetBorderColor 255 255 255
@@ -13,25 +13,108 @@ Show
     PlayAlertSound 5
 	
 Show
-    BaseType "Exalted Orb" "Eternal Orb" 
+    BaseType "Exalted Orb" "Eternal Orb" "Divine Orb"
     SetTextColor 220 200 170
     SetBackgroundColor 120 100 70
 	SetFontSize 50
 	PlayAlertSound 4
 	
 Show
-    BaseType "Orb of Regret" "Chaos Orb" "Regal Orb" "Orb of Fusing" "Gemcutter's Prism" "Divine Orb" "Orb of Alchemy" "Vaal Orb"
+    BaseType "Orb of Regret" "Chaos Orb" "Regal Orb" 
     SetTextColor 220 200 170
     SetBackgroundColor 120 100 70
 	SetFontSize 40
 	PlayAlertSound 1
 
-Show
-    Class "Currency"
-    SetFontSize 40
-
 	
+Show
+	BaseType "Orb of Fusing" "Gemcutter's Prism" "Orb of Alchemy" "Vaal Orb" "Cartographer's Chisel"
+	SetTextColor 220 200 170
+    SetBackgroundColor 120 100 70
+	PlayAlertSound 1
+	
+#----------------------------------------------
+#                        Atlas of Worlds
+#----------------------------------------------
+#"Map" oriented AoW currency is given a border to fit the map theme, and categorized by tier
 
+Show
+	BaseType "Apprentice Cartographer's Sextant" "Apprentice Cartographer's Seal"
+	SetFontSize 40
+	SetBorderColor 255 255 255 255
+	PlayAlertSound 3
+	
+Show
+	BaseType "Journeyman Cartographer's Sextant" "Journeyman Cartographer's Seal"
+	SetFontSize 40
+	SetBorderColor 255 200 0 255
+	PlayAlertSound 3
+	
+Show		
+	BaseType "Master Cartographer's Sextant"  "Master Cartographer's Seal"
+	SetFontSize 40
+	SetBorderColor 210 0 0 255
+	PlayAlertSound 3
+	
+Show
+	BaseType "Unshaping Orb"
+	SetBorderColor 255 255 255 255
+	PlayAlertSound 3
+
+Show
+	BaseType "Shaper's Orb (Tier 1)" "Shaper's Orb (Tier 2)" "Shaper's Orb (Tier 3)" "Shaper's Orb (Tier 4)" "Shaper's Orb (Tier 5)" "Shaper's Orb (Tier 6)" "Shaper's Orb (Tier 7)" "Shaper's Orb (Tier 8)" "Shaper's Orb (Tier 9)" "Shaper's Orb (Tier 10)"
+	SetBorderColor 255 255 255 255
+	PlayAlertSound 3
+	
+#----------------------------------------------
+#                        Essence League
+#----------------------------------------------
+Show
+	Class Currency
+	BaseType "Essence of Hysteria" "Essence of Insanity" "Essence of Horror" "Essence of Delirium" "Remnant of Corruption"
+	SetTextColor 210 0 0
+	SetFontSize 32
+	
+Show
+	Class Currency
+	BaseType "Whispering Essence of"
+	SetTextColor 44 162 255
+	SetFontSize 32
+	
+Show
+	Class Currency
+	BaseType "Weeping Essence of"
+	SetTextColor 39 156 255
+	SetFontSize 32
+	
+Show
+	Class Currency
+	BaseType "Wailing Essence of"
+	SetTextColor 35 140 255
+	SetFontSize 32
+	
+Show
+	Class Currency
+	BaseType "Screaming Essence of"
+	SetTextColor 30 144 255
+	SetFontSize 32
+
+Show
+	Class Currency
+	BaseType "Shrieking Essence of"
+	SetTextColor 30 144 255
+	SetFontSize 32
+
+Show
+	Class Currency
+	BaseType "Deafening Essence of"
+	SetTextColor 30 144 255
+	SetFontSize 32
+
+Show
+    Class Currency
+	SetBackgroundColor 0 0 0 130
+	
 #----------------------------------------------
 #                          Gems
 #----------------------------------------------
@@ -41,20 +124,23 @@ Show
 Show
     Class "Active Skill Gems"
     Quality >= 10
-    SetBorderColor 27 162 155
+    SetBorderColor 27 162 155 255
 
 Show
     Class "Support Skill Gems"
     Quality >= 10
-    SetBackgroundColor 7 40 38
-    SetBorderColor 27 162 155
+    SetBackgroundColor 7 40 38 
+    SetBorderColor 27 162 155 255
 
 Show
     Class "Support Skill Gems"
-    SetBackgroundColor 7 40 38
+    SetBackgroundColor 7 40 38 80
+	SetFontSize 18
 
 Show 
     Class Gem
+	SetBackgroundColor 0 0 0 80
+	SetFontSize 18
 
 #----------------------------------------------
 #                          Uniques
@@ -73,15 +159,19 @@ Show
 
 Show
     LinkedSockets >= 5
-    SetBorderColor 255 0 0
+    SetBorderColor 255 0 0 255
+	SetFontSize 50
+	PlayAlertSound 7
 
 Show
     Sockets = 6 
-    SetBorderColor 250 100 100
-
+    SetBorderColor 250 100 100 255
+	SetFontSize 64
+	PlayAlertSound 7
+	
 Show
     SocketGroup RGB
-    SetBorderColor 255 140 140
+    SetBorderColor 255 140 140 255
 
 #----------------------------------------------
 #                          FLASKS
@@ -165,10 +255,14 @@ Show
 #                          Bases
 #----------------------------------------------
 #Rings/Amulets/Belts/Jewels are droplevel independent
-#Maps should always be displayed
 Show
-    Class "Rings" "Amulets" "Belts" "Jewel" "Divination Card" "Map"
+    Class "Rings" "Amulets" "Belts" "Jewel" 
 
+Show
+	Class "Divination Card"
+	SetTextColor 120 0 246 255
+	SetBackgroundColor 25 10 51 240
+	
 #Caster Weapons are drop level independent, obviously only rares meet this criteria
 Show
     Class "Wands" "Sceptres"
@@ -180,6 +274,7 @@ Show
     SetTextColor 74 230 58
 
 #Vaal/Mortal Fragments are changed to red, this is just personal taste
+#Same applies for the shaper sub-boss fragments
 Show
     Class "Map Fragments"
     SetTextColor 255 20 20
@@ -195,7 +290,7 @@ Show
 
 #Note that the "cube of absorption" has a capital 'o' in 'Of' unlike other items
 Show
-	BaseType "Cube Of Absorption" "Bane of the Loyal" "Cogs of Disruption" "Heart of the Gargoyle" "Orb of Elemental Essence" "Portal Shredder" "Rod of Detonation" "Sand of Eternity"
+	BaseType "Cube Of Absorption" "Bane of the Loyal" "Cogs of Disruption" "Heart of the Gargoyle" "Orb of Elemental Dispersion" "Portal Shredder" "Rod of Detonation" "Sand of Eternity"
 	SetTextColor 74 230 58
 	
 Show
@@ -421,9 +516,32 @@ Show
 
 #BIS block
 Show
-    BaseType "Thicket Bow" "Ranger Bow" "Assassin Bow" "Spine Bow" "Imperial Bow" "Harbinger Bow" "Maraketh Bow" "Hellion's Paw" "Vaal Claw" "Imperial Claw" "Gemini Claw" "Ambusher" "Imperial Skean" "Sai" "Siege Axe" "Infernal Axe" "Runic Hatchet" "Vaal Hatchet" "Behemoth Mace" "Eternal Sword" "Legion Sword" "Vaal Blade" "Tiger Hook" "Sambar Sceptre" "Lathi" "Eclipse Staff" "Spiraled Foil" "Jewelled Foil" "Dragoon Sword" "Pecoraro" "Vaal Axe" "Despot Axe" "Void Axe" "Ezomyte Axe" "Talon Axe" "Piledriver" "Meatgrinder" "Coronal Maul" "Lion Sword" "Infernal Sword" "Exquisite Blade" "Imbued Wand" "Profane Wand" "Sacrificial Garb" "Carnal Armour" "Saintly Chainmail" "Assassin's Garb" "Glorious Plate" "Saint's Hauberk" "Sadist Garb" "Vaal Regalia" "Slink Boots" "Murder Boots" "Titan Greaves" "Sorcerer Boots" "Crusader Boots" "Slink Gloves" "Titan Gauntlets" "Sorcerer Gloves" "Dragonscale Gauntlets" "Murder Mitts" "Lion Pelt" "Hubris Circlet" "Eternal Burgonet" "Praetor Crown" "Deicide Mask" "Royal Burgonet" "Ezomyte Burgonet" "Silken Hood" "Colossal Tower Shield" "Supreme Spiked Shield" "Imperial Buckler" "Titanium Spirit Shield" "Harmonic Spirit Shield" "Archon Kite Shield"
+    BaseType "Thicket Bow" "Ranger Bow" "Assassin Bow" "Spine Bow" "Imperial Bow" "Harbinger Bow" "Maraketh Bow" "Hellion's Paw" "Vaal Claw" "Imperial Claw" "Gemini Claw" "Ambusher" "Imperial Skean" "Sai" "Siege Axe" "Infernal Axe" "Runic Hatchet" "Vaal Hatchet" "Behemoth Mace" "Eternal Sword" "Legion Sword" "Vaal Blade" "Tiger Hook" "Sambar Sceptre" "Lathi" "Eclipse Staff" "Spiraled Foil" "Jewelled Foil" "Dragoon Sword" "Pecoraro" "Vaal Axe" "Despot Axe" "Void Axe" "Ezomyte Axe" "Talon Axe" "Piledriver" "Meatgrinder" "Coronal Maul" "Lion Sword" "Infernal Sword" "Exquisite Blade" "Imbued Wand" "Profane Wand" "Sacrificial Garb" "Carnal Armour" "Saintly Chainmail" "Assassin's Garb" "Glorious Plate" "Saint's Hauberk" "Sadist Garb" "Vaal Regalia" "Slink Boots" "Murder Boots" "Titan Greaves" "Sorcerer Boots" "Crusader Boots" "Slink Gloves" "Titan Gauntlets" "Sorcerer Gloves" "Dragonscale Gauntlets" "Murder Mitts" "Lion Pelt" "Hubris Circlet" "Eternal Burgonet" "Praetor Crown" "Deicide Mask" "Royal Burgonet" "Ezomyte Burgonet" "Silken Hood" "Colossal Tower Shield" "Supreme Spiked Shield" "Imperial Buckler" "Titanium Spirit Shield" "Harmonic Spirit Shield" "Archon Kite Shield" "Bone Helmet" "Two-Toned Boots" "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves"
 
+#----------------------------------------------
+#                         Maps
+#----------------------------------------------
+#Maps border categorized by their tier (white/yellow/red)
 
+Show
+	Class Map
+	BaseType "Arcade Map" "Crystal Ore Map" "Desert Map" "Jungle Valley Map" "Beach Map" "Factory Map" "Ghetto Map" "Oasis Map" "Arid Lake Map" "Cavern Map" "Channel Map" "Grotto Map" "Marshes Map" "Sewer Map" "Vaal Pyramid Map" "Academy Map" "Acid Lakes Map" "Dungeon Map" "Graveyard Map" "Phantasmagoria Map" "Villa Map" "Waste Pool Map" "Burial Chambers Map" "Peninsula Map" "Dunes Map" "Mesa Map" "Pit Map" "Primordial Pool Map" "Spider Lair Map" "Tower Map" "Shaped Arcade Map" "Shaped Crystal Ore Map" "Shaped Desert Map" "Shaped Jungle Valley Map" "Canyon Map" "Quarry Map" "Racecourse Map" "Ramparts Map" "Spider Forest Map" "Strand Map" "Thicket Map" "Vaal City Map" "Wharf Map"
+	SetBorderColor 255 255 255 255
+
+	
+Show
+	Class Map
+	BaseType "Shaped Beach Map" "Shaped Factory Map" "Shaped Ghetto Map" "Shaped Oasis Map" "Arachnid Tomb Map" "Castle Ruins Map" "Catacombs Map" "Cells Map" "Armory Map" "Ashen Wood Map" "Mud Geyser Map" "Shaped Arid Lake Map" "Shaped Cavern Map" "Shaped Channel Map" "Shaped Grotto Map" "Shaped Marshes Map" "Shaped Sewer Map" "Shaped Vaal Pyramid Map" "Arachnid Nest Map" "Arena Map" "Bog Map" "Cemetery Map" "Barrows Map" "Atoll Map" "Pier Map" "Shore Map" "Tropical Island Map" "Shaped Academy Map" "Shaped Acid Lakes Map" "Shaped Dungeon Map" "Shaped Graveyard Map" "Shaped Phantasmagoria Map" "Shaped Villa Map" "Shaped Waste Pool Map" "Coves Map" "Crypt Map" "Museum Map" "Orchard Map" "Overgrown Shrine Map" "Promenade Map" "Reef Map" "Temple Map" "Shaped Burial Chambers Map" "Shaped Peninsula Map" "Shaped Dunes Map" "Shaped Mesa Map" "Shaped Pit Map" "Shaped Primordial Pool Map" "Shaped Spider Lair Map" "Shaped Tower Map" "Colonnade Map" "Arsenal Map" "Courtyard Map" "Malformation Map" "Quay Map" "Terrace Map" "Underground River Map" "Shaped Canyon Map" "Shaped Quarry Map" "Shaped Racecourse Map" "Shaped Ramparts Map" "Shaped Spider Forest Map" "Shaped Strand Map" "Shaped Thicket Map" "Shaped Vaal City Map" "Shaped Wharf Map" "Bazaar Map" "Chateau Map" "Excavation Map" "Precinct Map" "Torture Chamber Map" "Underground Sea Map" "Wasteland Map" "Shaped Arachnid Tomb Map" "Shaped Castle Ruins Map" "Shaped Catacombs Map" "Shaped Cells Map" "Shaped Armory Map" "Shaped Ashen Wood Map" "Shaped Mud Geyser Map" "Crematorium Map" "Estuary Map" "Necropolis Map" "Plateau Map" "Ivory Temple Map" "Residence Map" "Shipyard Map" "Vault Map"
+	SetBorderColor 255 200 0 255
+
+Show
+	Class Map
+	BaseType "Shaped Arachnid Tomb Map" "Shaped Castle Ruins Map" "Shaped Catacombs Map" "Shaped Cells Map" "Shaped Armory Map" "Shaped Ashen Wood Map" "Shaped Mud Geyser Map" "Crematorium Map" "Estuary Map" "Necropolis Map" "Plateau Map" "Ivory Temple Map" "Residence Map" "Shipyard Map" "Vault Map" "Shaped Arachnid Nest Map" "Shaped Arena Map" "Shaped Bog Map" "Shaped Cemetery Map" "Shaped Barrows Map" "Shaped Atoll Map" "Shaped Pier Map" "Shaped Shore Map" "Shaped Tropical Island Map" "Lair Map" "Beacon Map" "Gorge Map" "High Gardens Map" "Plaza Map" "Scriptorium Map" "Sulphur Wastes Map" "Waterways Map" "Shaped Coves Map" "Shaped Crypt Map" "Shaped Museum Map" "Shaped Orchard Map" "Shaped Overgrown Shrine Map" "Shaped Promenade Map" "Shaped Reef Map" "Shaped Temple Map" "Maze Map" "Mineral Pools Map" "Palace Map" "Shrine Map" "Springs Map" "Volcano Map" "Shaped Colonnade Map" "Shaped Arsenal Map" "Shaped Courtyard Map" "Shaped Malformation Map" "Shaped Quay Map" "Shaped Terrace Map" "Shaped Underground River Map" "Abyss Map" "Colosseum Map" "Core Map" "Dark Forest Map" "Overgrown Ruin Map" "Pit of the Chimera Map" "Lair of the Hydra Map" "Maze of the Minotaur Map" "Forge of the Phoenix Map" "Vaal Temple Map"
+	SetBorderColor 210 0 0 255
+	
+Show
+	Class Map
+	
 #----------------------------------------------
 #                         "Unwanted" Catch
 #----------------------------------------------
@@ -447,6 +565,7 @@ Show
     SetBackgroundColor 0 0 0 0
     SetFontSize 24
 
-#UNCONDITIONAL (forward compatible)
+#UNCONDITIONAL (forward compatible) (red for my testing purposes)
 Show
+	SetTextColor 150 0 0
     SetFontSize 24
