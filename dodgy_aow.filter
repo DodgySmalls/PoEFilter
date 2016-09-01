@@ -78,19 +78,25 @@ Show
 Show
 	Class Currency
 	BaseType "Whispering Essence of"
-	SetTextColor 44 162 255
+	SetTextColor 101 147 203
+	SetFontSize 32
+
+Show
+	Class Currency
+	BaseType "Muttering Essence of"
+	SetTextColor 101 147 203
 	SetFontSize 32
 	
 Show
 	Class Currency
 	BaseType "Weeping Essence of"
-	SetTextColor 39 156 255
+	SetTextColor 83 146 221
 	SetFontSize 32
 	
 Show
 	Class Currency
 	BaseType "Wailing Essence of"
-	SetTextColor 35 140 255
+	SetTextColor 83 146 221
 	SetFontSize 32
 	
 Show
