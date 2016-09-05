@@ -14,14 +14,14 @@ Show
 	
 Show
 	BaseType "Exalted Orb" "Eternal Orb" "Divine Orb"
-	SetTextColor 220 200 170
+	SetTextColor 220 200 170 255
 	SetBackgroundColor 120 100 70
 	SetFontSize 50
 	PlayAlertSound 4
 	
 Show
 	BaseType "Orb of Regret" "Chaos Orb" "Regal Orb" 
-	SetTextColor 220 200 170
+	SetTextColor 220 200 170 255
 	SetBackgroundColor 120 100 70
 	SetFontSize 40
 	PlayAlertSound 1
@@ -29,7 +29,7 @@ Show
 	
 Show
 	BaseType "Orb of Fusing" "Gemcutter's Prism" "Orb of Alchemy" "Vaal Orb" "Cartographer's Chisel"
-	SetTextColor 220 200 170
+	SetTextColor 220 200 170 255
 	SetBackgroundColor 120 100 70
 	PlayAlertSound 1
 	
@@ -119,7 +119,7 @@ Show
 
 Show
 	Class Currency
-	SetBackgroundColor 0 0 0 130
+	SetBackgroundColor 0 0 0 200
 	
 #----------------------------------------------
 #						   Gems
@@ -129,24 +129,22 @@ Show
 
 Show
 	Class "Active Skill Gems"
-	Quality >= 10
+	Quality >= 1
 	SetBorderColor 27 162 155 255
 
 Show
 	Class "Support Skill Gems"
-	Quality >= 10
+	Quality >= 1
 	SetBackgroundColor 7 40 38 
 	SetBorderColor 27 162 155 255
 
 Show
 	Class "Support Skill Gems"
 	SetBackgroundColor 7 40 38 80
-	SetFontSize 18
 
 Show 
 	Class Gem
 	SetBackgroundColor 0 0 0 80
-	SetFontSize 18
 
 #----------------------------------------------
 #						   Uniques
@@ -531,13 +529,13 @@ Show
 
 Show
 	Class Map
-	BaseType "Arcade Map" "Crystal Ore Map" "Desert Map" "Jungle Valley Map" "Beach Map" "Factory Map" "Ghetto Map" "Oasis Map" "Arid Lake Map" "Cavern Map" "Channel Map" "Grotto Map" "Marshes Map" "Sewer Map" "Vaal Pyramid Map" "Academy Map" "Acid Lakes Map" "Dungeon Map" "Graveyard Map" "Phantasmagoria Map" "Villa Map" "Waste Pool Map" "Burial Chambers Map" "Peninsula Map" "Dunes Map" "Mesa Map" "Pit Map" "Primordial Pool Map" "Spider Lair Map" "Tower Map" "Shaped Arcade Map" "Shaped Crystal Ore Map" "Shaped Desert Map" "Shaped Jungle Valley Map" "Canyon Map" "Quarry Map" "Racecourse Map" "Ramparts Map" "Spider Forest Map" "Strand Map" "Thicket Map" "Vaal City Map" "Wharf Map"
+	BaseType "Arcade Map" "Crystal Ore Map" "Desert Map" "Jungle Valley Map" "Beach Map" "Factory Map" "Ghetto Map" "Oasis Map" "Arid Lake Map" "Cavern Map" "Channel Map" "Grotto Map" "Marshes Map" "Sewer Map" "Vaal Pyramid Map" "Academy Map" "Acid Lakes Map" "Dungeon Map" "Graveyard Map" "Phantasmagoria Map" "Villa Map" "Waste Pool Map" "Burial Chambers Map" "Peninsula Map" "Dunes Map" "Mesa Map" "Pit Map" "Primordial Pool Map" "Spider Lair Map" "Tower Map"
 	SetBorderColor 255 255 255 255
 
 	
 Show
 	Class Map
-	BaseType "Shaped Beach Map" "Shaped Factory Map" "Shaped Ghetto Map" "Shaped Oasis Map" "Arachnid Tomb Map" "Castle Ruins Map" "Catacombs Map" "Cells Map" "Armory Map" "Ashen Wood Map" "Mud Geyser Map" "Shaped Arid Lake Map" "Shaped Cavern Map" "Shaped Channel Map" "Shaped Grotto Map" "Shaped Marshes Map" "Shaped Sewer Map" "Shaped Vaal Pyramid Map" "Arachnid Nest Map" "Arena Map" "Bog Map" "Cemetery Map" "Barrows Map" "Atoll Map" "Pier Map" "Shore Map" "Tropical Island Map" "Shaped Academy Map" "Shaped Acid Lakes Map" "Shaped Dungeon Map" "Shaped Graveyard Map" "Shaped Phantasmagoria Map" "Shaped Villa Map" "Shaped Waste Pool Map" "Coves Map" "Crypt Map" "Museum Map" "Orchard Map" "Overgrown Shrine Map" "Promenade Map" "Reef Map" "Temple Map" "Shaped Burial Chambers Map" "Shaped Peninsula Map" "Shaped Dunes Map" "Shaped Mesa Map" "Shaped Pit Map" "Shaped Primordial Pool Map" "Shaped Spider Lair Map" "Shaped Tower Map" "Colonnade Map" "Arsenal Map" "Courtyard Map" "Malformation Map" "Quay Map" "Terrace Map" "Underground River Map" "Shaped Canyon Map" "Shaped Quarry Map" "Shaped Racecourse Map" "Shaped Ramparts Map" "Shaped Spider Forest Map" "Shaped Strand Map" "Shaped Thicket Map" "Shaped Vaal City Map" "Shaped Wharf Map" "Bazaar Map" "Chateau Map" "Excavation Map" "Precinct Map" "Torture Chamber Map" "Underground Sea Map" "Wasteland Map" "Shaped Arachnid Tomb Map" "Shaped Castle Ruins Map" "Shaped Catacombs Map" "Shaped Cells Map" "Shaped Armory Map" "Shaped Ashen Wood Map" "Shaped Mud Geyser Map" "Crematorium Map" "Estuary Map" "Necropolis Map" "Plateau Map" "Ivory Temple Map" "Residence Map" "Shipyard Map" "Vault Map"
+	BaseType "Shaped Arcade Map" "Shaped Crystal Ore Map" "Shaped Desert Map" "Shaped Jungle Valley Map" "Canyon Map" "Quarry Map" "Racecourse Map" "Ramparts Map" "Spider Forest Map" "Strand Map" "Thicket Map" "Vaal City Map" "Wharf Map" "Shaped Beach Map" "Shaped Factory Map" "Shaped Ghetto Map" "Shaped Oasis Map" "Arachnid Tomb Map" "Castle Ruins Map" "Catacombs Map" "Cells Map" "Armory Map" "Ashen Wood Map" "Mud Geyser Map" "Shaped Arid Lake Map" "Shaped Cavern Map" "Shaped Channel Map" "Shaped Grotto Map" "Shaped Marshes Map" "Shaped Sewer Map" "Shaped Vaal Pyramid Map" "Arachnid Nest Map" "Arena Map" "Bog Map" "Cemetery Map" "Barrows Map" "Atoll Map" "Pier Map" "Shore Map" "Tropical Island Map" "Shaped Academy Map" "Shaped Acid Lakes Map" "Shaped Dungeon Map" "Shaped Graveyard Map" "Shaped Phantasmagoria Map" "Shaped Villa Map" "Shaped Waste Pool Map" "Coves Map" "Crypt Map" "Museum Map" "Orchard Map" "Overgrown Shrine Map" "Promenade Map" "Reef Map" "Temple Map" "Shaped Burial Chambers Map" "Shaped Peninsula Map" "Shaped Dunes Map" "Shaped Mesa Map" "Shaped Pit Map" "Shaped Primordial Pool Map" "Shaped Spider Lair Map" "Shaped Tower Map" "Colonnade Map" "Arsenal Map" "Courtyard Map" "Malformation Map" "Quay Map" "Terrace Map" "Underground River Map" "Shaped Canyon Map" "Shaped Quarry Map" "Shaped Racecourse Map" "Shaped Ramparts Map" "Shaped Spider Forest Map" "Shaped Strand Map" "Shaped Thicket Map" "Shaped Vaal City Map" "Shaped Wharf Map" "Bazaar Map" "Chateau Map" "Excavation Map" "Precinct Map" "Torture Chamber Map" "Underground Sea Map" "Wasteland Map" "Shaped Arachnid Tomb Map" "Shaped Castle Ruins Map" "Shaped Catacombs Map" "Shaped Cells Map" "Shaped Armory Map" "Shaped Ashen Wood Map" "Shaped Mud Geyser Map" "Crematorium Map" "Estuary Map" "Necropolis Map" "Plateau Map" "Ivory Temple Map" "Residence Map" "Shipyard Map" "Vault Map"
 	SetBorderColor 255 200 0 255
 
 Show
