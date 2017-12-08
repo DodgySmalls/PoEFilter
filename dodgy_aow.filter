@@ -172,7 +172,18 @@ Show
 Show
 	Class Currency
 	SetBackgroundColor 0 0 0 200
+
+#----------------------------------------------
+#						 War for the Atlas
+#----------------------------------------------
+Show
+	ShaperItem True
+	SetBorderColor 27 162 155 255
 	
+Show
+	ElderItem True
+	SetBorderColor 120 0 246 255
+
 #----------------------------------------------
 #						   Gems
 #----------------------------------------------
@@ -314,6 +325,12 @@ Show
 Show
 	Class "Rings" "Amulets" "Belts" "Jewel" 
 
+#OpieOP bases
+Show
+	BaseType "Steel Ring" "Crystal Belt"
+	SetBorderColor 255 255 255 255
+	
+	
 Show
 	Class "Divination Card"
 	SetTextColor 120 0 246 255
@@ -573,7 +590,8 @@ Show
 #BIS block
 Show
 	BaseType "Thicket Bow" "Ranger Bow" "Assassin Bow" "Spine Bow" "Imperial Bow" "Harbinger Bow" "Maraketh Bow" "Hellion's Paw" "Vaal Claw" "Imperial Claw" "Gemini Claw" "Ambusher" "Imperial Skean" "Sai" "Siege Axe" "Infernal Axe" "Runic Hatchet" "Vaal Hatchet" "Behemoth Mace" "Eternal Sword" "Legion Sword" "Vaal Blade" "Tiger Hook" "Sambar Sceptre" "Lathi" "Eclipse Staff" "Spiraled Foil" "Jewelled Foil" "Dragoon Sword" "Pecoraro" "Vaal Axe" "Despot Axe" "Void Axe" "Ezomyte Axe" "Talon Axe" "Piledriver" "Meatgrinder" "Coronal Maul" "Lion Sword" "Infernal Sword" "Exquisite Blade" "Imbued Wand" "Profane Wand" "Sacrificial Garb" "Carnal Armour" "Saintly Chainmail" "Assassin's Garb" "Glorious Plate" "Saint's Hauberk" "Sadist Garb" "Vaal Regalia" "Slink Boots" "Murder Boots" "Titan Greaves" "Sorcerer Boots" "Crusader Boots" "Slink Gloves" "Titan Gauntlets" "Sorcerer Gloves" "Dragonscale Gauntlets" "Murder Mitts" "Lion Pelt" "Hubris Circlet" "Eternal Burgonet" "Praetor Crown" "Deicide Mask" "Royal Burgonet" "Ezomyte Burgonet" "Silken Hood" "Colossal Tower Shield" "Supreme Spiked Shield" "Imperial Buckler" "Titanium Spirit Shield" "Harmonic Spirit Shield" "Archon Kite Shield" "Bone Helmet" "Two-Toned Boots" "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves"
-
+	SetBorderColor 255 255 255 255
+	
 #----------------------------------------------
 #						  Maps
 #----------------------------------------------
@@ -581,19 +599,24 @@ Show
 
 Show
 	Class Map
-	BaseType "Arcade Map" "Crystal Ore Map" "Desert Map" "Jungle Valley Map" "Beach Map" "Factory Map" "Ghetto Map" "Oasis Map" "Arid Lake Map" "Cavern Map" "Channel Map" "Grotto Map" "Marshes Map" "Sewer Map" "Vaal Pyramid Map" "Academy Map" "Acid Lakes Map" "Dungeon Map" "Graveyard Map" "Phantasmagoria Map" "Villa Map" "Waste Pool Map" "Burial Chambers Map" "Peninsula Map" "Dunes Map" "Mesa Map" "Pit Map" "Primordial Pool Map" "Spider Lair Map" "Tower Map"
+	BaseType "Lookout Map" "Beach Map" "Graveyard Map" "Dungeon Map" "Alleyways Map" "Pen Map" "Desert Map" "Arid Lake Map" "Flooded Mine Map" "Marshes Map" "Iceberg Map" "Cage Map" "Springs Map" "Excavation Map" "Leyline Map" "Peninsula Map" "Port Map" "Burial Chambers Map" "Cells Map" "Arcade Map" "City Square Map" "Relic Chambers Map" "Courthouse Map" "Strand Map" "Chateau Map" "Grotto Map" "Gorge Map" "Volcano Map" "Lighthouse Map" "Canyon Map" "Conservatory Map" "Sulphur Vents Map" "Haunted Mansion Map" "Maze Map" "Channel Map" "Toxic Sewer Map" "Ancient City Map" "Ivory Temple Map" "Spider Lair Map" "Barrows Map" "Mausoleum Map" "Fields Map" "Jungle Valley Map" "Phantasmagoria Map" "Academy Map" "Thicket Map" "Wharf Map" "Ashen Wood Map" "Atoll Map" "Cemetery Map" "Underground Sea Map"
 	SetBorderColor 255 255 255 255
 
 	
 Show
 	Class Map
-	BaseType "Shaped Arcade Map" "Shaped Crystal Ore Map" "Shaped Desert Map" "Shaped Jungle Valley Map" "Canyon Map" "Quarry Map" "Racecourse Map" "Ramparts Map" "Spider Forest Map" "Strand Map" "Thicket Map" "Vaal City Map" "Wharf Map" "Shaped Beach Map" "Shaped Factory Map" "Shaped Ghetto Map" "Shaped Oasis Map" "Arachnid Tomb Map" "Castle Ruins Map" "Catacombs Map" "Cells Map" "Ashen Wood Map" "Mud Geyser Map" "Shaped Arid Lake Map" "Shaped Cavern Map" "Shaped Channel Map" "Shaped Grotto Map" "Shaped Marshes Map" "Shaped Sewer Map" "Shaped Vaal Pyramid Map" "Arachnid Nest Map" "Arena Map" "Bog Map" "Cemetery Map" "Barrows Map" "Atoll Map" "Pier Map" "Shore Map" "Tropical Island Map" "Shaped Academy Map" "Shaped Acid Lakes Map" "Shaped Dungeon Map" "Shaped Graveyard Map" "Shaped Phantasmagoria Map" "Shaped Villa Map" "Shaped Waste Pool Map" "Coves Map" "Crypt Map" "Museum Map" "Orchard Map" "Overgrown Shrine Map" "Promenade Map" "Reef Map" "Temple Map" "Shaped Burial Chambers Map" "Shaped Peninsula Map" "Shaped Dunes Map" "Shaped Mesa Map" "Shaped Pit Map" "Shaped Primordial Pool Map" "Shaped Spider Lair Map" "Shaped Tower Map" "Colonnade Map" "Arsenal Map" "Courtyard Map" "Malformation Map" "Port Map" "Terrace Map" "Underground River Map" "Shaped Canyon Map" "Shaped Quarry Map" "Shaped Racecourse Map" "Shaped Ramparts Map" "Shaped Spider Forest Map" "Shaped Strand Map" "Shaped Thicket Map" "Shaped Vaal City Map" "Shaped Wharf Map" "Bazaar Map" "Chateau Map" "Excavation Map" "Precinct Map" "Torture Chamber Map" "Underground Sea Map" "Wasteland Map" "Shaped Arachnid Tomb Map" "Shaped Castle Ruins Map" "Shaped Catacombs Map" "Shaped Cells Map" "Shaped Ashen Wood Map" "Shaped Mud Geyser Map" "Crematorium Map" "Estuary Map" "Necropolis Map" "Plateau Map" "Ivory Temple Map" "Residence Map" "Shipyard Map" "Vault Map"
+	BaseType "Tribunal Map" "Coral Ruins Map" "Lava Chamber Map" "Residence Map" "Ramparts Map" "Dunes Map" "Bone Crypt Map" "Underground River Map" "Gardens Map" "Arachnid Nest Map" "Bazaar Map" "Laboratory Map" "Infested Valley Map" "Overgrown Ruin Map" "Vaal Pyramid Map" "Geode Map" "Armoury Map" "Courtyard Map" "Mud Geyser Map" "Shore Map" "Tropical Island Map" "Mineral Pools Map" "Moon Temple Map" "Sepulchre Map" "Tower Map" "Waste Pool Map" "Plateau Map" "Estuary Map" "Vault Map" "Temple Map" "Arena Map" "Museum Map" "Scriptorium Map" "Siege Map" "Shipyard Map" "Belfry Map" "Arachnid Tomb Map" "Wasteland Map" "Precinct Map" "Bog Map" "Pier Map" "Cursed Crypt Map" "Orchard Map"
 	SetBorderColor 255 200 0 255
 
 Show
-	Class Map
-	BaseType "Shaped Arachnid Tomb Map" "Shaped Castle Ruins Map" "Shaped Catacombs Map" "Shaped Cells Map" "Shaped Ashen Wood Map" "Shaped Mud Geyser Map" "Crematorium Map" "Estuary Map" "Necropolis Map" "Plateau Map" "Ivory Temple Map" "Residence Map" "Shipyard Map" "Vault Map" "Shaped Arachnid Nest Map" "Shaped Arena Map" "Shaped Bog Map" "Shaped Cemetery Map" "Shaped Barrows Map" "Shaped Atoll Map" "Shaped Pier Map" "Shaped Shore Map" "Shaped Tropical Island Map" "Lair Map" "Beacon Map" "Gorge Map" "High Gardens Map" "Plaza Map" "Scriptorium Map" "Sulphur Wastes Map" "Waterways Map" "Shaped Coves Map" "Shaped Crypt Map" "Shaped Museum Map" "Shaped Orchard Map" "Shaped Overgrown Shrine Map" "Shaped Promenade Map" "Shaped Reef Map" "Shaped Temple Map" "Maze Map" "Mineral Pools Map" "Palace Map" "Shrine Map" "Springs Map" "Volcano Map" "Shaped Colonnade Map" "Shaped Arsenal Map" "Shaped Courtyard Map" "Shaped Malformation Map" "Shaped Port Map" "Shaped Terrace Map" "Shaped Underground River Map" "Abyss Map" "Colosseum Map" "Core Map" "Dark Forest Map" "Overgrown Ruin Map" "Pit of the Chimera Map" "Lair of the Hydra Map" "Maze of the Minotaur Map" "Forge of the Phoenix Map" "Vaal Temple Map"
+	Class Map 
+	ShapedMap False
 	SetBorderColor 210 0 0 255
+	
+Show
+	Class Map
+	ShapedMap True 
+	SetBorderColor 210 0 0 255	
 	
 Show
 	Class Map
